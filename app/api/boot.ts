@@ -30,4 +30,8 @@ if (env.isProduction) {
   serve({ fetch: app.fetch, port }, () => {
     console.log(`Server running on http://localhost:${port}/`);
   });
+
+  // 启动定时采集任务
+  const { startCrawlerScheduler } = await import("./crawler/scheduler");
+  await startCrawlerScheduler();
 }
