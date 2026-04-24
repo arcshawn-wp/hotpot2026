@@ -7,8 +7,6 @@
 #   3. docker-compose exec app npx tsx db/seed.ts
 #   4. docker-compose logs -f app
 
-version: '3.8'
-
 services:
   # ============================================
   # MySQL 数据库
