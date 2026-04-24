@@ -1,9 +1,11 @@
+# ============================================================
 # 热点挖掘器 - Docker Compose 配置
+# ============================================================
 # 使用方法:
-#   1. docker-compose up -d          # 启动所有服务
-#   2. docker-compose exec app npx drizzle-kit push  # 推送数据库schema
-#   3. docker-compose exec app npx tsx db/seed.ts    # 插入种子数据
-#   4. docker-compose logs -f app    # 查看日志
+#   1. docker-compose up --build -d
+#   2. docker-compose exec app npx drizzle-kit push
+#   3. docker-compose exec app npx tsx db/seed.ts
+#   4. docker-compose logs -f app
 
 version: '3.8'
 
@@ -15,13 +17,12 @@ services:
     image: mysql:8.0
     container_name: hotspot-mysql
     environment:
-      MYSQL_ROOT_PASSWORD: HotspotDB2024!
-      MYSQL_DATABASE: hotspot_db
-      MYSQL_USER: hotspot
-      MYSQL_PASSWORD: HotspotUser2024!
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-HotPot@2026Secure!}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-hotpot2026}
+      MYSQL_USER: ${MYSQL_USER:-hotpot_user}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-HotPot@2026Secure!}
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
     ports:
       - "3306:3306"
     command: >
@@ -29,10 +30,10 @@ services:
       --character-set-server=utf8mb4
       --collation-server=utf8mb4_unicode_ci
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pHotspotDB2024!"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
       timeout: 5s
-      retries: 5
+      retries: 10
       start_period: 30s
     restart: always
     networks:
@@ -44,21 +45,16 @@ services:
   app:
     build:
       context: ../app
-      dockerfile: ../deploy/Dockerfile
+      dockerfile: Dockerfile
     container_name: hotspot-app
     ports:
       - "3000:3000"
     environment:
-      # 数据库连接（使用Docker内部网络）
-      DATABASE_URL: mysql://hotspot:HotspotUser2024!@mysql:3306/hotspot_db
+      DATABASE_URL: ${DATABASE_URL:-mysql://hotpot_user:HotPot@2026Secure!@mysql:3306/hotpot2026}
       NODE_ENV: production
       PORT: 3000
-      
-      # 采集配置（可选，不填则使用模拟数据）
-      # CRAWLER_WEIBO_COOKIE: "你的微博Cookie"
-      # CRAWLER_DOUYIN_COOKIE: "你的抖音Cookie"
-      # CRAWLER_XHS_COOKIE: "你的小红书Cookie"
-      # CRAWLER_WEATHER_API_KEY: "你的和风天气API密钥"
+      APP_ID: ${APP_ID:-hotpot_app_1777004661_5058}
+      APP_SECRET: ${APP_SECRET:-ee0b7b8de1052a7d10c05f04af015ba87d1da916aad3a7d88fb2565283c4c7cc}
     depends_on:
       mysql:
         condition: service_healthy
@@ -66,8 +62,8 @@ services:
       test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/api/trpc/ping"]
       interval: 30s
       timeout: 10s
-      retries: 3
-      start_period: 60s
+      retries: 5
+      start_period: 120s
     restart: always
     networks:
       - hotspot-network
@@ -80,10 +76,8 @@ services:
     container_name: hotspot-nginx
     ports:
       - "80:80"
-      - "443:443"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./ssl:/etc/nginx/ssl:ro
     depends_on:
       app:
         condition: service_healthy
