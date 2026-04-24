@@ -1,0 +1,8650 @@
+{
+  "2026-01-01": {
+    "date": "2026-01-01",
+    "month": 1,
+    "day": 1,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-02": {
+    "date": "2026-01-02",
+    "month": 1,
+    "day": 2,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-03": {
+    "date": "2026-01-03",
+    "month": 1,
+    "day": 3,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-04": {
+    "date": "2026-01-04",
+    "month": 1,
+    "day": 4,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-05": {
+    "date": "2026-01-05",
+    "month": 1,
+    "day": 5,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "小寒",
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "高效取暖",
+      "冬季养生",
+      "保暖升级"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "小寒保暖节",
+      "最冷时节温暖守护",
+      "冬季养生专场"
+    ]
+  },
+  "2026-01-06": {
+    "date": "2026-01-06",
+    "month": 1,
+    "day": 6,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-07": {
+    "date": "2026-01-07",
+    "month": 1,
+    "day": 7,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-08": {
+    "date": "2026-01-08",
+    "month": 1,
+    "day": 8,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-09": {
+    "date": "2026-01-09",
+    "month": 1,
+    "day": 9,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-10": {
+    "date": "2026-01-10",
+    "month": 1,
+    "day": 10,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-11": {
+    "date": "2026-01-11",
+    "month": 1,
+    "day": 11,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-12": {
+    "date": "2026-01-12",
+    "month": 1,
+    "day": 12,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-13": {
+    "date": "2026-01-13",
+    "month": 1,
+    "day": 13,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-14": {
+    "date": "2026-01-14",
+    "month": 1,
+    "day": 14,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-15": {
+    "date": "2026-01-15",
+    "month": 1,
+    "day": 15,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-16": {
+    "date": "2026-01-16",
+    "month": 1,
+    "day": 16,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-17": {
+    "date": "2026-01-17",
+    "month": 1,
+    "day": 17,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-18": {
+    "date": "2026-01-18",
+    "month": 1,
+    "day": 18,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-19": {
+    "date": "2026-01-19",
+    "month": 1,
+    "day": 19,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-20": {
+    "date": "2026-01-20",
+    "month": 1,
+    "day": 20,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "大寒",
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "清洁家电",
+      "家居焕新",
+      "年货采购"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "大寒年末大扫除",
+      "焕新迎新年",
+      "年货节预热"
+    ]
+  },
+  "2026-01-21": {
+    "date": "2026-01-21",
+    "month": 1,
+    "day": 21,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-22": {
+    "date": "2026-01-22",
+    "month": 1,
+    "day": 22,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-23": {
+    "date": "2026-01-23",
+    "month": 1,
+    "day": 23,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-24": {
+    "date": "2026-01-24",
+    "month": 1,
+    "day": 24,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-25": {
+    "date": "2026-01-25",
+    "month": 1,
+    "day": 25,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-26": {
+    "date": "2026-01-26",
+    "month": 1,
+    "day": 26,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-27": {
+    "date": "2026-01-27",
+    "month": 1,
+    "day": 27,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-28": {
+    "date": "2026-01-28",
+    "month": 1,
+    "day": 28,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-29": {
+    "date": "2026-01-29",
+    "month": 1,
+    "day": 29,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-30": {
+    "date": "2026-01-30",
+    "month": 1,
+    "day": 30,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-01-31": {
+    "date": "2026-01-31",
+    "month": 1,
+    "day": 31,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "1月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥延续"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-01": {
+    "date": "2026-02-01",
+    "month": 2,
+    "day": 1,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-02": {
+    "date": "2026-02-02",
+    "month": 2,
+    "day": 2,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-03": {
+    "date": "2026-02-03",
+    "month": 2,
+    "day": 3,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-04": {
+    "date": "2026-02-04",
+    "month": 2,
+    "day": 4,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "立春",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "换季收纳",
+      "春季清洁",
+      "空气净化"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "立春焕新家",
+      "春季收纳攻略",
+      "新年新气象"
+    ]
+  },
+  "2026-02-05": {
+    "date": "2026-02-05",
+    "month": 2,
+    "day": 5,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-06": {
+    "date": "2026-02-06",
+    "month": 2,
+    "day": 6,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-07": {
+    "date": "2026-02-07",
+    "month": 2,
+    "day": 7,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-08": {
+    "date": "2026-02-08",
+    "month": 2,
+    "day": 8,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-09": {
+    "date": "2026-02-09",
+    "month": 2,
+    "day": 9,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-10": {
+    "date": "2026-02-10",
+    "month": 2,
+    "day": 10,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-11": {
+    "date": "2026-02-11",
+    "month": 2,
+    "day": 11,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-12": {
+    "date": "2026-02-12",
+    "month": 2,
+    "day": 12,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-13": {
+    "date": "2026-02-13",
+    "month": 2,
+    "day": 13,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-14": {
+    "date": "2026-02-14",
+    "month": 2,
+    "day": 14,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-15": {
+    "date": "2026-02-15",
+    "month": 2,
+    "day": 15,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-16": {
+    "date": "2026-02-16",
+    "month": 2,
+    "day": 16,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-17": {
+    "date": "2026-02-17",
+    "month": 2,
+    "day": 17,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-18": {
+    "date": "2026-02-18",
+    "month": 2,
+    "day": 18,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "雨水",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "除湿防潮",
+      "家居防护",
+      "换季收纳"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "雨水防潮大作战",
+      "春雨来袭家居防护",
+      "除湿必备"
+    ]
+  },
+  "2026-02-19": {
+    "date": "2026-02-19",
+    "month": 2,
+    "day": 19,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-20": {
+    "date": "2026-02-20",
+    "month": 2,
+    "day": 20,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-21": {
+    "date": "2026-02-21",
+    "month": 2,
+    "day": 21,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-22": {
+    "date": "2026-02-22",
+    "month": 2,
+    "day": 22,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-23": {
+    "date": "2026-02-23",
+    "month": 2,
+    "day": 23,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-24": {
+    "date": "2026-02-24",
+    "month": 2,
+    "day": 24,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-25": {
+    "date": "2026-02-25",
+    "month": 2,
+    "day": 25,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-26": {
+    "date": "2026-02-26",
+    "month": 2,
+    "day": 26,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-27": {
+    "date": "2026-02-27",
+    "month": 2,
+    "day": 27,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-02-28": {
+    "date": "2026-02-28",
+    "month": 2,
+    "day": 28,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "2月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "连续阴雨"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-01": {
+    "date": "2026-03-01",
+    "month": 3,
+    "day": 1,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-02": {
+    "date": "2026-03-02",
+    "month": 3,
+    "day": 2,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-03": {
+    "date": "2026-03-03",
+    "month": 3,
+    "day": 3,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-04": {
+    "date": "2026-03-04",
+    "month": 3,
+    "day": 4,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-05": {
+    "date": "2026-03-05",
+    "month": 3,
+    "day": 5,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "惊蛰",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "除湿机",
+      "干衣机",
+      "抗菌家电"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "惊蛰除湿战",
+      "告别回南天",
+      "春雷防霉指南"
+    ]
+  },
+  "2026-03-06": {
+    "date": "2026-03-06",
+    "month": 3,
+    "day": 6,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-07": {
+    "date": "2026-03-07",
+    "month": 3,
+    "day": 7,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-08": {
+    "date": "2026-03-08",
+    "month": 3,
+    "day": 8,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-09": {
+    "date": "2026-03-09",
+    "month": 3,
+    "day": 9,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-10": {
+    "date": "2026-03-10",
+    "month": 3,
+    "day": 10,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-11": {
+    "date": "2026-03-11",
+    "month": 3,
+    "day": 11,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-12": {
+    "date": "2026-03-12",
+    "month": 3,
+    "day": 12,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-13": {
+    "date": "2026-03-13",
+    "month": 3,
+    "day": 13,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-14": {
+    "date": "2026-03-14",
+    "month": 3,
+    "day": 14,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-15": {
+    "date": "2026-03-15",
+    "month": 3,
+    "day": 15,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-16": {
+    "date": "2026-03-16",
+    "month": 3,
+    "day": 16,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-17": {
+    "date": "2026-03-17",
+    "month": 3,
+    "day": 17,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-18": {
+    "date": "2026-03-18",
+    "month": 3,
+    "day": 18,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-19": {
+    "date": "2026-03-19",
+    "month": 3,
+    "day": 19,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-20": {
+    "date": "2026-03-20",
+    "month": 3,
+    "day": 20,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "春分",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "家装家电",
+      "厨房电器",
+      "智能家居"
+    ],
+    "heat_level": 5,
+    "marketing_themes": [
+      "春分家装节",
+      "金三银四焕新家",
+      "春季装修攻略"
+    ]
+  },
+  "2026-03-21": {
+    "date": "2026-03-21",
+    "month": 3,
+    "day": 21,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-22": {
+    "date": "2026-03-22",
+    "month": 3,
+    "day": 22,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-23": {
+    "date": "2026-03-23",
+    "month": 3,
+    "day": 23,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-24": {
+    "date": "2026-03-24",
+    "month": 3,
+    "day": 24,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-25": {
+    "date": "2026-03-25",
+    "month": 3,
+    "day": 25,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-26": {
+    "date": "2026-03-26",
+    "month": 3,
+    "day": 26,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-27": {
+    "date": "2026-03-27",
+    "month": 3,
+    "day": 27,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-28": {
+    "date": "2026-03-28",
+    "month": 3,
+    "day": 28,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-29": {
+    "date": "2026-03-29",
+    "month": 3,
+    "day": 29,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-30": {
+    "date": "2026-03-30",
+    "month": 3,
+    "day": 30,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-03-31": {
+    "date": "2026-03-31",
+    "month": 3,
+    "day": 31,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "3月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "倒春寒",
+      "沙尘暴雾霾",
+      "回南天"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-01": {
+    "date": "2026-04-01",
+    "month": 4,
+    "day": 1,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-02": {
+    "date": "2026-04-02",
+    "month": 4,
+    "day": 2,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-03": {
+    "date": "2026-04-03",
+    "month": 4,
+    "day": 3,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-04": {
+    "date": "2026-04-04",
+    "month": 4,
+    "day": 4,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-05": {
+    "date": "2026-04-05",
+    "month": 4,
+    "day": 5,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": "清明",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "户外用品",
+      "便携家电",
+      "摄影器材"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "清明踏青季",
+      "春日户外生活节",
+      "踏青装备一站购"
+    ]
+  },
+  "2026-04-06": {
+    "date": "2026-04-06",
+    "month": 4,
+    "day": 6,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-07": {
+    "date": "2026-04-07",
+    "month": 4,
+    "day": 7,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-08": {
+    "date": "2026-04-08",
+    "month": 4,
+    "day": 8,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-09": {
+    "date": "2026-04-09",
+    "month": 4,
+    "day": 9,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-10": {
+    "date": "2026-04-10",
+    "month": 4,
+    "day": 10,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-11": {
+    "date": "2026-04-11",
+    "month": 4,
+    "day": 11,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-12": {
+    "date": "2026-04-12",
+    "month": 4,
+    "day": 12,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-13": {
+    "date": "2026-04-13",
+    "month": 4,
+    "day": 13,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-14": {
+    "date": "2026-04-14",
+    "month": 4,
+    "day": 14,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-15": {
+    "date": "2026-04-15",
+    "month": 4,
+    "day": 15,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-16": {
+    "date": "2026-04-16",
+    "month": 4,
+    "day": 16,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-17": {
+    "date": "2026-04-17",
+    "month": 4,
+    "day": 17,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-18": {
+    "date": "2026-04-18",
+    "month": 4,
+    "day": 18,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-19": {
+    "date": "2026-04-19",
+    "month": 4,
+    "day": 19,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-20": {
+    "date": "2026-04-20",
+    "month": 4,
+    "day": 20,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "谷雨",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "养生壶/茶具",
+      "祛湿家电",
+      "厨房小电"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "谷雨品茶会",
+      "春季养生节",
+      "祛湿养生好物"
+    ]
+  },
+  "2026-04-21": {
+    "date": "2026-04-21",
+    "month": 4,
+    "day": 21,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-22": {
+    "date": "2026-04-22",
+    "month": 4,
+    "day": 22,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-23": {
+    "date": "2026-04-23",
+    "month": 4,
+    "day": 23,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-24": {
+    "date": "2026-04-24",
+    "month": 4,
+    "day": 24,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-25": {
+    "date": "2026-04-25",
+    "month": 4,
+    "day": 25,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-26": {
+    "date": "2026-04-26",
+    "month": 4,
+    "day": 26,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-27": {
+    "date": "2026-04-27",
+    "month": 4,
+    "day": 27,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-28": {
+    "date": "2026-04-28",
+    "month": 4,
+    "day": 28,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-29": {
+    "date": "2026-04-29",
+    "month": 4,
+    "day": 29,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-04-30": {
+    "date": "2026-04-30",
+    "month": 4,
+    "day": 30,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "4月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "沙尘暴雾霾",
+      "回南天",
+      "梅雨季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-01": {
+    "date": "2026-05-01",
+    "month": 5,
+    "day": 1,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-02": {
+    "date": "2026-05-02",
+    "month": 5,
+    "day": 2,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-03": {
+    "date": "2026-05-03",
+    "month": 5,
+    "day": 3,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-04": {
+    "date": "2026-05-04",
+    "month": 5,
+    "day": 4,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-05": {
+    "date": "2026-05-05",
+    "month": 5,
+    "day": 5,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "立夏",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "风扇",
+      "空调清洗",
+      "夏季床品"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "立夏清凉预备",
+      "夏日生活节",
+      "夏季好物提前囤"
+    ]
+  },
+  "2026-05-06": {
+    "date": "2026-05-06",
+    "month": 5,
+    "day": 6,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-07": {
+    "date": "2026-05-07",
+    "month": 5,
+    "day": 7,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-08": {
+    "date": "2026-05-08",
+    "month": 5,
+    "day": 8,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-09": {
+    "date": "2026-05-09",
+    "month": 5,
+    "day": 9,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-10": {
+    "date": "2026-05-10",
+    "month": 5,
+    "day": 10,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-11": {
+    "date": "2026-05-11",
+    "month": 5,
+    "day": 11,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-12": {
+    "date": "2026-05-12",
+    "month": 5,
+    "day": 12,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-13": {
+    "date": "2026-05-13",
+    "month": 5,
+    "day": 13,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-14": {
+    "date": "2026-05-14",
+    "month": 5,
+    "day": 14,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-15": {
+    "date": "2026-05-15",
+    "month": 5,
+    "day": 15,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-16": {
+    "date": "2026-05-16",
+    "month": 5,
+    "day": 16,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-17": {
+    "date": "2026-05-17",
+    "month": 5,
+    "day": 17,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-18": {
+    "date": "2026-05-18",
+    "month": 5,
+    "day": 18,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-19": {
+    "date": "2026-05-19",
+    "month": 5,
+    "day": 19,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-20": {
+    "date": "2026-05-20",
+    "month": 5,
+    "day": 20,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-21": {
+    "date": "2026-05-21",
+    "month": 5,
+    "day": 21,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "小满",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "防潮除湿",
+      "衣物护理",
+      "清洁家电"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "小满防潮攻略",
+      "梅雨季准备",
+      "夏季清洁指南"
+    ]
+  },
+  "2026-05-22": {
+    "date": "2026-05-22",
+    "month": 5,
+    "day": 22,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-23": {
+    "date": "2026-05-23",
+    "month": 5,
+    "day": 23,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-24": {
+    "date": "2026-05-24",
+    "month": 5,
+    "day": 24,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-25": {
+    "date": "2026-05-25",
+    "month": 5,
+    "day": 25,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-26": {
+    "date": "2026-05-26",
+    "month": 5,
+    "day": 26,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-27": {
+    "date": "2026-05-27",
+    "month": 5,
+    "day": 27,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-28": {
+    "date": "2026-05-28",
+    "month": 5,
+    "day": 28,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-29": {
+    "date": "2026-05-29",
+    "month": 5,
+    "day": 29,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-30": {
+    "date": "2026-05-30",
+    "month": 5,
+    "day": 30,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-05-31": {
+    "date": "2026-05-31",
+    "month": 5,
+    "day": 31,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "5月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气初现"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-01": {
+    "date": "2026-06-01",
+    "month": 6,
+    "day": 1,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-02": {
+    "date": "2026-06-02",
+    "month": 6,
+    "day": 2,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-03": {
+    "date": "2026-06-03",
+    "month": 6,
+    "day": 3,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-04": {
+    "date": "2026-06-04",
+    "month": 6,
+    "day": 4,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-05": {
+    "date": "2026-06-05",
+    "month": 6,
+    "day": 5,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "芒种",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "空气净化器",
+      "清洁家电",
+      "除湿机"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "芒种除尘除湿",
+      "梅雨季生存指南",
+      "智能清洁节"
+    ]
+  },
+  "2026-06-06": {
+    "date": "2026-06-06",
+    "month": 6,
+    "day": 6,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-07": {
+    "date": "2026-06-07",
+    "month": 6,
+    "day": 7,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-08": {
+    "date": "2026-06-08",
+    "month": 6,
+    "day": 8,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-09": {
+    "date": "2026-06-09",
+    "month": 6,
+    "day": 9,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-10": {
+    "date": "2026-06-10",
+    "month": 6,
+    "day": 10,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-11": {
+    "date": "2026-06-11",
+    "month": 6,
+    "day": 11,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-12": {
+    "date": "2026-06-12",
+    "month": 6,
+    "day": 12,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-13": {
+    "date": "2026-06-13",
+    "month": 6,
+    "day": 13,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-14": {
+    "date": "2026-06-14",
+    "month": 6,
+    "day": 14,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-15": {
+    "date": "2026-06-15",
+    "month": 6,
+    "day": 15,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-16": {
+    "date": "2026-06-16",
+    "month": 6,
+    "day": 16,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-17": {
+    "date": "2026-06-17",
+    "month": 6,
+    "day": 17,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-18": {
+    "date": "2026-06-18",
+    "month": 6,
+    "day": 18,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-19": {
+    "date": "2026-06-19",
+    "month": 6,
+    "day": 19,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-20": {
+    "date": "2026-06-20",
+    "month": 6,
+    "day": 20,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-21": {
+    "date": "2026-06-21",
+    "month": 6,
+    "day": 21,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": "夏至",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "空调",
+      "风扇",
+      "制冷设备"
+    ],
+    "heat_level": 5,
+    "marketing_themes": [
+      "夏至清凉节",
+      "空调选购指南",
+      "夏日消暑好物"
+    ]
+  },
+  "2026-06-22": {
+    "date": "2026-06-22",
+    "month": 6,
+    "day": 22,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-23": {
+    "date": "2026-06-23",
+    "month": 6,
+    "day": 23,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-24": {
+    "date": "2026-06-24",
+    "month": 6,
+    "day": 24,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-25": {
+    "date": "2026-06-25",
+    "month": 6,
+    "day": 25,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-26": {
+    "date": "2026-06-26",
+    "month": 6,
+    "day": 26,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-27": {
+    "date": "2026-06-27",
+    "month": 6,
+    "day": 27,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-28": {
+    "date": "2026-06-28",
+    "month": 6,
+    "day": 28,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-29": {
+    "date": "2026-06-29",
+    "month": 6,
+    "day": 29,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-06-30": {
+    "date": "2026-06-30",
+    "month": 6,
+    "day": 30,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "6月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-01": {
+    "date": "2026-07-01",
+    "month": 7,
+    "day": 1,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-02": {
+    "date": "2026-07-02",
+    "month": 7,
+    "day": 2,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-03": {
+    "date": "2026-07-03",
+    "month": 7,
+    "day": 3,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-04": {
+    "date": "2026-07-04",
+    "month": 7,
+    "day": 4,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-05": {
+    "date": "2026-07-05",
+    "month": 7,
+    "day": 5,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-06": {
+    "date": "2026-07-06",
+    "month": 7,
+    "day": 6,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-07": {
+    "date": "2026-07-07",
+    "month": 7,
+    "day": 7,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "小暑",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "高能效空调",
+      "节能风扇",
+      "夏日小家电"
+    ],
+    "heat_level": 5,
+    "marketing_themes": [
+      "小暑清凉攻略",
+      "节能空调节",
+      "夏日小家电狂欢"
+    ]
+  },
+  "2026-07-08": {
+    "date": "2026-07-08",
+    "month": 7,
+    "day": 8,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-09": {
+    "date": "2026-07-09",
+    "month": 7,
+    "day": 9,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-10": {
+    "date": "2026-07-10",
+    "month": 7,
+    "day": 10,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-11": {
+    "date": "2026-07-11",
+    "month": 7,
+    "day": 11,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-12": {
+    "date": "2026-07-12",
+    "month": 7,
+    "day": 12,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-13": {
+    "date": "2026-07-13",
+    "month": 7,
+    "day": 13,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-14": {
+    "date": "2026-07-14",
+    "month": 7,
+    "day": 14,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-15": {
+    "date": "2026-07-15",
+    "month": 7,
+    "day": 15,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-16": {
+    "date": "2026-07-16",
+    "month": 7,
+    "day": 16,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-17": {
+    "date": "2026-07-17",
+    "month": 7,
+    "day": 17,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-18": {
+    "date": "2026-07-18",
+    "month": 7,
+    "day": 18,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-19": {
+    "date": "2026-07-19",
+    "month": 7,
+    "day": 19,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-20": {
+    "date": "2026-07-20",
+    "month": 7,
+    "day": 20,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-21": {
+    "date": "2026-07-21",
+    "month": 7,
+    "day": 21,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-22": {
+    "date": "2026-07-22",
+    "month": 7,
+    "day": 22,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-23": {
+    "date": "2026-07-23",
+    "month": 7,
+    "day": 23,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "大暑",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "空调",
+      "冷风扇",
+      "冰箱/冰柜"
+    ],
+    "heat_level": 5,
+    "marketing_themes": [
+      "大暑降温节",
+      "全年最冷价",
+      "清凉一夏"
+    ]
+  },
+  "2026-07-24": {
+    "date": "2026-07-24",
+    "month": 7,
+    "day": 24,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-25": {
+    "date": "2026-07-25",
+    "month": 7,
+    "day": 25,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-26": {
+    "date": "2026-07-26",
+    "month": 7,
+    "day": 26,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-27": {
+    "date": "2026-07-27",
+    "month": 7,
+    "day": 27,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-28": {
+    "date": "2026-07-28",
+    "month": 7,
+    "day": 28,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-29": {
+    "date": "2026-07-29",
+    "month": 7,
+    "day": 29,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-30": {
+    "date": "2026-07-30",
+    "month": 7,
+    "day": 30,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-07-31": {
+    "date": "2026-07-31",
+    "month": 7,
+    "day": 31,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "7月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "梅雨季",
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-01": {
+    "date": "2026-08-01",
+    "month": 8,
+    "day": 1,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-02": {
+    "date": "2026-08-02",
+    "month": 8,
+    "day": 2,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-03": {
+    "date": "2026-08-03",
+    "month": 8,
+    "day": 3,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-04": {
+    "date": "2026-08-04",
+    "month": 8,
+    "day": 4,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-05": {
+    "date": "2026-08-05",
+    "month": 8,
+    "day": 5,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-06": {
+    "date": "2026-08-06",
+    "month": 8,
+    "day": 6,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-07": {
+    "date": "2026-08-07",
+    "month": 8,
+    "day": 7,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "立秋",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "厨房电器",
+      "养生电器",
+      "烘焙设备"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "立秋贴秋膘",
+      "秋季养生厨房",
+      "养生好物节"
+    ]
+  },
+  "2026-08-08": {
+    "date": "2026-08-08",
+    "month": 8,
+    "day": 8,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-09": {
+    "date": "2026-08-09",
+    "month": 8,
+    "day": 9,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-10": {
+    "date": "2026-08-10",
+    "month": 8,
+    "day": 10,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-11": {
+    "date": "2026-08-11",
+    "month": 8,
+    "day": 11,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-12": {
+    "date": "2026-08-12",
+    "month": 8,
+    "day": 12,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-13": {
+    "date": "2026-08-13",
+    "month": 8,
+    "day": 13,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-14": {
+    "date": "2026-08-14",
+    "month": 8,
+    "day": 14,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-15": {
+    "date": "2026-08-15",
+    "month": 8,
+    "day": 15,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-16": {
+    "date": "2026-08-16",
+    "month": 8,
+    "day": 16,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-17": {
+    "date": "2026-08-17",
+    "month": 8,
+    "day": 17,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-18": {
+    "date": "2026-08-18",
+    "month": 8,
+    "day": 18,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-19": {
+    "date": "2026-08-19",
+    "month": 8,
+    "day": 19,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-20": {
+    "date": "2026-08-20",
+    "month": 8,
+    "day": 20,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-21": {
+    "date": "2026-08-21",
+    "month": 8,
+    "day": 21,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-22": {
+    "date": "2026-08-22",
+    "month": 8,
+    "day": 22,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-23": {
+    "date": "2026-08-23",
+    "month": 8,
+    "day": 23,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": "处暑",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "空调清洁",
+      "家电保养",
+      "换季收纳"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "处暑换季保养",
+      "空调清洗季",
+      "夏秋焕新攻略"
+    ]
+  },
+  "2026-08-24": {
+    "date": "2026-08-24",
+    "month": 8,
+    "day": 24,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-25": {
+    "date": "2026-08-25",
+    "month": 8,
+    "day": 25,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-26": {
+    "date": "2026-08-26",
+    "month": 8,
+    "day": 26,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-27": {
+    "date": "2026-08-27",
+    "month": 8,
+    "day": 27,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-28": {
+    "date": "2026-08-28",
+    "month": 8,
+    "day": 28,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-29": {
+    "date": "2026-08-29",
+    "month": 8,
+    "day": 29,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-30": {
+    "date": "2026-08-30",
+    "month": 8,
+    "day": 30,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-08-31": {
+    "date": "2026-08-31",
+    "month": 8,
+    "day": 31,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "8月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "高温天气",
+      "台风季"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-01": {
+    "date": "2026-09-01",
+    "month": 9,
+    "day": 1,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-02": {
+    "date": "2026-09-02",
+    "month": 9,
+    "day": 2,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-03": {
+    "date": "2026-09-03",
+    "month": 9,
+    "day": 3,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-04": {
+    "date": "2026-09-04",
+    "month": 9,
+    "day": 4,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-05": {
+    "date": "2026-09-05",
+    "month": 9,
+    "day": 5,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-06": {
+    "date": "2026-09-06",
+    "month": 9,
+    "day": 6,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-07": {
+    "date": "2026-09-07",
+    "month": 9,
+    "day": 7,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "白露",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "加湿器",
+      "养生电器",
+      "保暖准备"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "白露防秋燥",
+      "秋季养生节",
+      "润燥好物推荐"
+    ]
+  },
+  "2026-09-08": {
+    "date": "2026-09-08",
+    "month": 9,
+    "day": 8,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-09": {
+    "date": "2026-09-09",
+    "month": 9,
+    "day": 9,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-10": {
+    "date": "2026-09-10",
+    "month": 9,
+    "day": 10,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-11": {
+    "date": "2026-09-11",
+    "month": 9,
+    "day": 11,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-12": {
+    "date": "2026-09-12",
+    "month": 9,
+    "day": 12,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-13": {
+    "date": "2026-09-13",
+    "month": 9,
+    "day": 13,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-14": {
+    "date": "2026-09-14",
+    "month": 9,
+    "day": 14,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-15": {
+    "date": "2026-09-15",
+    "month": 9,
+    "day": 15,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-16": {
+    "date": "2026-09-16",
+    "month": 9,
+    "day": 16,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-17": {
+    "date": "2026-09-17",
+    "month": 9,
+    "day": 17,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-18": {
+    "date": "2026-09-18",
+    "month": 9,
+    "day": 18,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-19": {
+    "date": "2026-09-19",
+    "month": 9,
+    "day": 19,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-20": {
+    "date": "2026-09-20",
+    "month": 9,
+    "day": 20,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-21": {
+    "date": "2026-09-21",
+    "month": 9,
+    "day": 21,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-22": {
+    "date": "2026-09-22",
+    "month": 9,
+    "day": 22,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-23": {
+    "date": "2026-09-23",
+    "month": 9,
+    "day": 23,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "秋分",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "家装家电",
+      "厨卫电器",
+      "秋季养生"
+    ],
+    "heat_level": 5,
+    "marketing_themes": [
+      "秋季家装节",
+      "金九银十焕新家",
+      "秋分养生好物"
+    ]
+  },
+  "2026-09-24": {
+    "date": "2026-09-24",
+    "month": 9,
+    "day": 24,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-25": {
+    "date": "2026-09-25",
+    "month": 9,
+    "day": 25,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-26": {
+    "date": "2026-09-26",
+    "month": 9,
+    "day": 26,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-27": {
+    "date": "2026-09-27",
+    "month": 9,
+    "day": 27,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-28": {
+    "date": "2026-09-28",
+    "month": 9,
+    "day": 28,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-29": {
+    "date": "2026-09-29",
+    "month": 9,
+    "day": 29,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-09-30": {
+    "date": "2026-09-30",
+    "month": 9,
+    "day": 30,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "9月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "台风季末"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-01": {
+    "date": "2026-10-01",
+    "month": 10,
+    "day": 1,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-02": {
+    "date": "2026-10-02",
+    "month": 10,
+    "day": 2,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-03": {
+    "date": "2026-10-03",
+    "month": 10,
+    "day": 3,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-04": {
+    "date": "2026-10-04",
+    "month": 10,
+    "day": 4,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-05": {
+    "date": "2026-10-05",
+    "month": 10,
+    "day": 5,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-06": {
+    "date": "2026-10-06",
+    "month": 10,
+    "day": 6,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-07": {
+    "date": "2026-10-07",
+    "month": 10,
+    "day": 7,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-08": {
+    "date": "2026-10-08",
+    "month": 10,
+    "day": 8,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "寒露",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "取暖器",
+      "保暖家电",
+      "秋冬床品"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "寒露保暖节",
+      "取暖器选购",
+      "冬日暖家攻略"
+    ]
+  },
+  "2026-10-09": {
+    "date": "2026-10-09",
+    "month": 10,
+    "day": 9,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-10": {
+    "date": "2026-10-10",
+    "month": 10,
+    "day": 10,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-11": {
+    "date": "2026-10-11",
+    "month": 10,
+    "day": 11,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-12": {
+    "date": "2026-10-12",
+    "month": 10,
+    "day": 12,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-13": {
+    "date": "2026-10-13",
+    "month": 10,
+    "day": 13,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-14": {
+    "date": "2026-10-14",
+    "month": 10,
+    "day": 14,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-15": {
+    "date": "2026-10-15",
+    "month": 10,
+    "day": 15,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-16": {
+    "date": "2026-10-16",
+    "month": 10,
+    "day": 16,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-17": {
+    "date": "2026-10-17",
+    "month": 10,
+    "day": 17,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-18": {
+    "date": "2026-10-18",
+    "month": 10,
+    "day": 18,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-19": {
+    "date": "2026-10-19",
+    "month": 10,
+    "day": 19,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-20": {
+    "date": "2026-10-20",
+    "month": 10,
+    "day": 20,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-21": {
+    "date": "2026-10-21",
+    "month": 10,
+    "day": 21,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-22": {
+    "date": "2026-10-22",
+    "month": 10,
+    "day": 22,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-23": {
+    "date": "2026-10-23",
+    "month": 10,
+    "day": 23,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "霜降",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "取暖设备",
+      "除螨除湿",
+      "冬季家电"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "霜降入冬准备",
+      "过冬家电一站购",
+      "冬季取暖指南"
+    ]
+  },
+  "2026-10-24": {
+    "date": "2026-10-24",
+    "month": 10,
+    "day": 24,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-25": {
+    "date": "2026-10-25",
+    "month": 10,
+    "day": 25,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-26": {
+    "date": "2026-10-26",
+    "month": 10,
+    "day": 26,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-27": {
+    "date": "2026-10-27",
+    "month": 10,
+    "day": 27,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-28": {
+    "date": "2026-10-28",
+    "month": 10,
+    "day": 28,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-29": {
+    "date": "2026-10-29",
+    "month": 10,
+    "day": 29,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-30": {
+    "date": "2026-10-30",
+    "month": 10,
+    "day": 30,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-10-31": {
+    "date": "2026-10-31",
+    "month": 10,
+    "day": 31,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "10月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "秋燥",
+      "沙尘暴雾霾"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-01": {
+    "date": "2026-11-01",
+    "month": 11,
+    "day": 1,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-02": {
+    "date": "2026-11-02",
+    "month": 11,
+    "day": 2,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-03": {
+    "date": "2026-11-03",
+    "month": 11,
+    "day": 3,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-04": {
+    "date": "2026-11-04",
+    "month": 11,
+    "day": 4,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-05": {
+    "date": "2026-11-05",
+    "month": 11,
+    "day": 5,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-06": {
+    "date": "2026-11-06",
+    "month": 11,
+    "day": 6,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-07": {
+    "date": "2026-11-07",
+    "month": 11,
+    "day": 7,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": "立冬",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "取暖电器",
+      "保暖家居",
+      "冬季厨房"
+    ],
+    "heat_level": 5,
+    "marketing_themes": [
+      "立冬暖经济",
+      "冬季取暖节",
+      "暖冬好物推荐"
+    ]
+  },
+  "2026-11-08": {
+    "date": "2026-11-08",
+    "month": 11,
+    "day": 8,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-09": {
+    "date": "2026-11-09",
+    "month": 11,
+    "day": 9,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-10": {
+    "date": "2026-11-10",
+    "month": 11,
+    "day": 10,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-11": {
+    "date": "2026-11-11",
+    "month": 11,
+    "day": 11,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-12": {
+    "date": "2026-11-12",
+    "month": 11,
+    "day": 12,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-13": {
+    "date": "2026-11-13",
+    "month": 11,
+    "day": 13,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-14": {
+    "date": "2026-11-14",
+    "month": 11,
+    "day": 14,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-15": {
+    "date": "2026-11-15",
+    "month": 11,
+    "day": 15,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-16": {
+    "date": "2026-11-16",
+    "month": 11,
+    "day": 16,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-17": {
+    "date": "2026-11-17",
+    "month": 11,
+    "day": 17,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-18": {
+    "date": "2026-11-18",
+    "month": 11,
+    "day": 18,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-19": {
+    "date": "2026-11-19",
+    "month": 11,
+    "day": 19,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-20": {
+    "date": "2026-11-20",
+    "month": 11,
+    "day": 20,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-21": {
+    "date": "2026-11-21",
+    "month": 11,
+    "day": 21,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-22": {
+    "date": "2026-11-22",
+    "month": 11,
+    "day": 22,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": "小雪",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "加湿取暖",
+      "冬季护理",
+      "保暖升级"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "小雪暖冬计划",
+      "加湿取暖节",
+      "冬季舒适家居"
+    ]
+  },
+  "2026-11-23": {
+    "date": "2026-11-23",
+    "month": 11,
+    "day": 23,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-24": {
+    "date": "2026-11-24",
+    "month": 11,
+    "day": 24,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-25": {
+    "date": "2026-11-25",
+    "month": 11,
+    "day": 25,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-26": {
+    "date": "2026-11-26",
+    "month": 11,
+    "day": 26,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-27": {
+    "date": "2026-11-27",
+    "month": 11,
+    "day": 27,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-28": {
+    "date": "2026-11-28",
+    "month": 11,
+    "day": 28,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-29": {
+    "date": "2026-11-29",
+    "month": 11,
+    "day": 29,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-11-30": {
+    "date": "2026-11-30",
+    "month": 11,
+    "day": 30,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "11月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气",
+      "秋燥"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-01": {
+    "date": "2026-12-01",
+    "month": 12,
+    "day": 1,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-02": {
+    "date": "2026-12-02",
+    "month": 12,
+    "day": 2,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-03": {
+    "date": "2026-12-03",
+    "month": 12,
+    "day": 3,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-04": {
+    "date": "2026-12-04",
+    "month": 12,
+    "day": 4,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-05": {
+    "date": "2026-12-05",
+    "month": 12,
+    "day": 5,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-06": {
+    "date": "2026-12-06",
+    "month": 12,
+    "day": 6,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-07": {
+    "date": "2026-12-07",
+    "month": 12,
+    "day": 7,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "大雪",
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "电暖器",
+      "暖风机",
+      "保暖家纺"
+    ],
+    "heat_level": 5,
+    "marketing_themes": [
+      "大雪取暖节",
+      "石墨烯取暖专场",
+      "寒冬保暖攻略"
+    ]
+  },
+  "2026-12-08": {
+    "date": "2026-12-08",
+    "month": 12,
+    "day": 8,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-09": {
+    "date": "2026-12-09",
+    "month": 12,
+    "day": 9,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-10": {
+    "date": "2026-12-10",
+    "month": 12,
+    "day": 10,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-11": {
+    "date": "2026-12-11",
+    "month": 12,
+    "day": 11,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-12": {
+    "date": "2026-12-12",
+    "month": 12,
+    "day": 12,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双12",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-13": {
+    "date": "2026-12-13",
+    "month": 12,
+    "day": 13,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-14": {
+    "date": "2026-12-14",
+    "month": 12,
+    "day": 14,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-15": {
+    "date": "2026-12-15",
+    "month": 12,
+    "day": 15,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-16": {
+    "date": "2026-12-16",
+    "month": 12,
+    "day": 16,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-17": {
+    "date": "2026-12-17",
+    "month": 12,
+    "day": 17,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-18": {
+    "date": "2026-12-18",
+    "month": 12,
+    "day": 18,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-19": {
+    "date": "2026-12-19",
+    "month": 12,
+    "day": 19,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "双11",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-20": {
+    "date": "2026-12-20",
+    "month": 12,
+    "day": 20,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-21": {
+    "date": "2026-12-21",
+    "month": 12,
+    "day": 21,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-22": {
+    "date": "2026-12-22",
+    "month": 12,
+    "day": 22,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": "冬至",
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [
+      "厨房电器",
+      "保暖家纺",
+      "养生电器"
+    ],
+    "heat_level": 4,
+    "marketing_themes": [
+      "冬至团圆节",
+      "冬至养生好物",
+      "冬日暖家宴"
+    ]
+  },
+  "2026-12-23": {
+    "date": "2026-12-23",
+    "month": 12,
+    "day": 23,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-24": {
+    "date": "2026-12-24",
+    "month": 12,
+    "day": 24,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-25": {
+    "date": "2026-12-25",
+    "month": 12,
+    "day": 25,
+    "weekday": 5,
+    "weekday_name": "五",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-26": {
+    "date": "2026-12-26",
+    "month": 12,
+    "day": 26,
+    "weekday": 6,
+    "weekday_name": "六",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-27": {
+    "date": "2026-12-27",
+    "month": 12,
+    "day": 27,
+    "weekday": 0,
+    "weekday_name": "日",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": true,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-28": {
+    "date": "2026-12-28",
+    "month": 12,
+    "day": 28,
+    "weekday": 1,
+    "weekday_name": "一",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-29": {
+    "date": "2026-12-29",
+    "month": 12,
+    "day": 29,
+    "weekday": 2,
+    "weekday_name": "二",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-30": {
+    "date": "2026-12-30",
+    "month": 12,
+    "day": 30,
+    "weekday": 3,
+    "weekday_name": "三",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  },
+  "2026-12-31": {
+    "date": "2026-12-31",
+    "month": 12,
+    "day": 31,
+    "weekday": 4,
+    "weekday_name": "四",
+    "month_name": "12月",
+    "lunar": "",
+    "is_weekend": false,
+    "solar_term": null,
+    "holiday": {
+      "name": "年货节",
+      "type": "电商"
+    },
+    "weather_patterns": [
+      "寒潮冷空气"
+    ],
+    "hotspots": [],
+    "recommended_products": [],
+    "heat_level": 4,
+    "marketing_themes": []
+  }
+}

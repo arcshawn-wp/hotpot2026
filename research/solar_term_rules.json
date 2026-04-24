@@ -1,0 +1,459 @@
+{
+  "metadata": {
+    "title": "24节气-家电/家装/家居消费映射规则库",
+    "version": "1.0",
+    "created_date": "2025-07-30",
+    "description": "基于气候特征、消费心理与电商数据的24节气消费需求映射规则，适用于家电/家装/家居直播间运营",
+    "total_terms": 24,
+    "data_sources": [
+      "京东节气消费报告",
+      "天猫家装节数据",
+      "苏宁易购销售数据",
+      "行业消费趋势分析",
+      "气象消费关联研究"
+    ]
+  },
+  "solar_term_rules": [
+    {
+      "id": "lichun",
+      "name": "立春",
+      "date_2026": "02-04",
+      "climate": "春季开端，气温回升但仍寒冷，万物复苏",
+      "consumer_psychology": "辞旧迎新，春季焕新需求强烈，开始规划全年家居改善",
+      "categories": ["换季收纳", "春季清洁", "空气净化"],
+      "product_details": [
+        {"category": "换季收纳", "items": ["真空压缩袋", "衣物收纳箱", "收纳柜"], "keywords": ["换季收纳", "冬装收纳", "春季整理"]},
+        {"category": "春季清洁", "items": ["无线吸尘器", "蒸汽拖把", "除螨仪"], "keywords": ["春季大扫除", "深层清洁"]},
+        {"category": "空气净化", "items": ["空气净化器", "新风机", "除甲醛剂"], "keywords": ["空气净化", "除醛"]},
+        {"category": "床品焕新", "items": ["春秋四件套", "蚕丝被", "乳胶枕"], "keywords": ["春季床品", "换季寝具"]}
+      ],
+      "marketing_themes": ["立春焕新家", "春季收纳攻略", "新年新气象"],
+      "heat_level": 4,
+      "related_weather": "倒春寒",
+      "references": [44, 61]
+    },
+    {
+      "id": "yushui",
+      "name": "雨水",
+      "date_2026": "02-18",
+      "climate": "春雨增多，空气湿度上升，南方湿冷明显",
+      "consumer_psychology": "关注防潮除湿，保护家居免受潮湿侵害",
+      "categories": ["除湿防潮", "家居防护", "换季收纳"],
+      "product_details": [
+        {"category": "除湿防潮", "items": ["除湿机", "空调除湿功能", "干燥剂"], "keywords": ["除湿", "防潮", "回南天"]},
+        {"category": "家居防护", "items": ["防潮垫", "密封收纳盒", "防潮漆"], "keywords": ["家居防潮", "防霉"]},
+        {"category": "衣物烘干", "items": ["干衣机", "烘干机", "暖风机"], "keywords": ["衣物烘干", "除湿干衣"]}
+      ],
+      "marketing_themes": ["雨水防潮大作战", "春雨来袭家居防护", "除湿必备"],
+      "heat_level": 3,
+      "related_weather": "春雨连绵",
+      "references": [283, 285, 288]
+    },
+    {
+      "id": "jingzhe",
+      "name": "惊蛰",
+      "date_2026": "03-05",
+      "climate": "春雷始鸣，雨水增多，湿气加重，南方回南天",
+      "consumer_psychology": "除湿防霉成为刚需，关注家居健康和清洁",
+      "categories": ["除湿机", "干衣机", "抗菌家电"],
+      "product_details": [
+        {"category": "除湿机", "items": ["家用除湿机", "新风除湿一体机", "衣柜除湿器"], "keywords": ["除湿", "回南天", "防潮"]},
+        {"category": "干衣机", "items": ["滚筒干衣机", "热泵干衣机", "折叠干衣架"], "keywords": ["干衣", "烘衣", "防霉"]},
+        {"category": "抗菌家电", "items": ["UV除菌灯", "空气净化器", "除螨仪"], "keywords": ["除菌", "防霉", "健康"]}
+      ],
+      "marketing_themes": ["惊蛰除湿战", "告别回南天", "春雷防霉指南"],
+      "heat_level": 4,
+      "related_weather": "春雷、回南天",
+      "references": [40, 42, 63]
+    },
+    {
+      "id": "chunfen",
+      "name": "春分",
+      "date_2026": "03-20",
+      "climate": "昼夜平分，气温回升稳定，春暖花开",
+      "consumer_psychology": "金三银四家装旺季启动，装修采购需求旺盛",
+      "categories": ["家装家电", "厨房电器", "智能家居"],
+      "product_details": [
+        {"category": "家装家电", "items": ["智能电视", "冰箱", "洗衣机"], "keywords": ["家装节", "春季装修", "全屋焕新"]},
+        {"category": "厨房电器", "items": ["油烟机", "洗碗机", "蒸烤箱"], "keywords": ["厨房焕新", "厨电升级"]},
+        {"category": "智能家居", "items": ["智能门锁", "扫地机器人", "智能窗帘"], "keywords": ["智能家居", "智慧生活"]},
+        {"category": "空调", "items": ["变频空调", "新风空调", "中央空调"], "keywords": ["空调焕新", "春季安装"]}
+      ],
+      "marketing_themes": ["春分家装节", "金三银四焕新家", "春季装修攻略"],
+      "heat_level": 5,
+      "related_weather": "春暖花开",
+      "references": [39, 46, 48, 56]
+    },
+    {
+      "id": "qingming",
+      "name": "清明",
+      "date_2026": "04-05",
+      "climate": "天清气爽，适合户外活动，春雨时现",
+      "consumer_psychology": "踏青出行热潮，户外用品和摄影器材需求上升",
+      "categories": ["户外用品", "便携家电", "摄影器材"],
+      "product_details": [
+        {"category": "户外用品", "items": ["便携帐篷", "户外桌椅", "野餐垫"], "keywords": ["踏青", "露营", "户外"]},
+        {"category": "便携家电", "items": ["便携小风扇", "户外电源", "便携音箱"], "keywords": ["便携", "户外装备"]},
+        {"category": "摄影器材", "items": ["运动相机", "数码相机", "手机稳定器"], "keywords": ["踏青摄影", "户外拍摄"]},
+        {"category": "车载家电", "items": ["车载冰箱", "车载吸尘器", "车用空气净化器"], "keywords": ["自驾游", "车载"]}
+      ],
+      "marketing_themes": ["清明踏青季", "春日户外生活节", "踏青装备一站购"],
+      "heat_level": 4,
+      "related_weather": "春雨、晴朗",
+      "references": [37, 38, 41, 43]
+    },
+    {
+      "id": "guyu",
+      "name": "谷雨",
+      "date_2026": "04-20",
+      "climate": "春季最后一个节气，雨水增多，湿气偏重",
+      "consumer_psychology": "品春茶、养生祛湿，关注春季养生和厨房小家电",
+      "categories": ["养生壶/茶具", "祛湿家电", "厨房小电"],
+      "product_details": [
+        {"category": "养生壶/茶具", "items": ["养生壶", "煮茶器", "自动茶具套装"], "keywords": ["谷雨茶", "养生壶", "品茶"]},
+        {"category": "祛湿家电", "items": ["除湿机", "艾灸仪", "泡脚桶"], "keywords": ["祛湿", "养生", "谷雨养生"]},
+        {"category": "厨房小电", "items": ["电饭煲", "电炖锅", "破壁机"], "keywords": ["春季养生粥", "养生食谱"]}
+      ],
+      "marketing_themes": ["谷雨品茶会", "春季养生节", "祛湿养生好物"],
+      "heat_level": 3,
+      "related_weather": "春雨连绵",
+      "references": [387, 396]
+    },
+    {
+      "id": "lixia",
+      "name": "立夏",
+      "date_2026": "05-05",
+      "climate": "夏季开始，气温明显升高，暑气渐起",
+      "consumer_psychology": "开始准备夏季用品，关注制冷和降温产品",
+      "categories": ["风扇", "空调清洗", "夏季床品"],
+      "product_details": [
+        {"category": "风扇", "items": ["落地扇", "空气循环扇", "USB小风扇"], "keywords": ["夏季风扇", "循环扇"]},
+        {"category": "空调相关", "items": ["空调清洗剂", "空调挡风板", "空调被"], "keywords": ["空调清洗", "夏季准备"]},
+        {"category": "夏季床品", "items": ["凉席", "夏凉被", "冰丝四件套"], "keywords": ["夏季床品", "清凉睡眠"]}
+      ],
+      "marketing_themes": ["立夏清凉预备", "夏日生活节", "夏季好物提前囤"],
+      "heat_level": 3,
+      "related_weather": "气温回升",
+      "references": [400]
+    },
+    {
+      "id": "xiaoman",
+      "name": "小满",
+      "date_2026": "05-21",
+      "climate": "麦类等作物灌浆，湿热加重，梅雨将至",
+      "consumer_psychology": "防潮防霉需求增强，衣物收纳和除湿成为重点",
+      "categories": ["防潮除湿", "衣物护理", "清洁家电"],
+      "product_details": [
+        {"category": "防潮除湿", "items": ["除湿机", "防潮袋", "电子防潮箱"], "keywords": ["小满防潮", "梅雨准备"]},
+        {"category": "衣物护理", "items": ["衣物烘干机", "熨烫机", "衣物除菌机"], "keywords": ["衣物护理", "防霉"]},
+        {"category": "清洁家电", "items": ["洗地机", "蒸汽清洁机", "除螨仪"], "keywords": ["深层清洁", "除螨"]}
+      ],
+      "marketing_themes": ["小满防潮攻略", "梅雨季准备", "夏季清洁指南"],
+      "heat_level": 3,
+      "related_weather": "湿热、梅雨前兆",
+      "references": [133]
+    },
+    {
+      "id": "mangzhong",
+      "name": "芒种",
+      "date_2026": "06-05",
+      "climate": "麦类成熟收割，梅雨季节开始，湿热交蒸",
+      "consumer_psychology": "关注室内空气质量，除尘清洁和除湿并重",
+      "categories": ["空气净化器", "清洁家电", "除湿机"],
+      "product_details": [
+        {"category": "空气净化器", "items": ["家用空气净化器", "车载净化器", "新风机"], "keywords": ["空气净化", "梅雨除味"]},
+        {"category": "清洁家电", "items": ["扫地机器人", "洗地机", "无线吸尘器"], "keywords": ["智能清洁", "除尘"]},
+        {"category": "除湿机", "items": ["家用除湿机", "衣柜除湿器", "除湿袋"], "keywords": ["梅雨除湿", "防霉防潮"]}
+      ],
+      "marketing_themes": ["芒种除尘除湿", "梅雨季生存指南", "智能清洁节"],
+      "heat_level": 3,
+      "related_weather": "梅雨季节",
+      "references": [133]
+    },
+    {
+      "id": "xiazhi",
+      "name": "夏至",
+      "date_2026": "06-21",
+      "climate": "白昼最长，高温天气正式开始，炎热潮湿",
+      "consumer_psychology": "制冷需求爆发，防暑降温成为首要消费目标",
+      "categories": ["空调", "风扇", "制冷设备"],
+      "product_details": [
+        {"category": "空调", "items": ["变频空调", "移动空调", "中央空调"], "keywords": ["空调", "制冷", "节能空调"]},
+        {"category": "风扇", "items": ["空气循环扇", "无叶风扇", "挂脖风扇"], "keywords": ["风扇", "循环扇", "降温"]},
+        {"category": "制冷设备", "items": ["制冰机", "冷风扇", "冰吧"], "keywords": ["制冰", "冷风扇", "消暑"]},
+        {"category": "夏季厨房", "items": ["凉面机", "冰淇淋机", "冷饮杯"], "keywords": ["夏日厨房", "清凉美食"]}
+      ],
+      "marketing_themes": ["夏至清凉节", "空调选购指南", "夏日消暑好物"],
+      "heat_level": 5,
+      "related_weather": "高温天气",
+      "references": [119, 121, 125]
+    },
+    {
+      "id": "xiaoshu",
+      "name": "小暑",
+      "date_2026": "07-07",
+      "climate": "进入伏天，高温闷热，用电量激增",
+      "consumer_psychology": "追求极致降温，关注节能省电和高效制冷",
+      "categories": ["高能效空调", "节能风扇", "夏日小家电"],
+      "product_details": [
+        {"category": "高能效空调", "items": ["一级能效空调", "变频节能空调", "新风空调"], "keywords": ["节能空调", "一级能效"]},
+        {"category": "夏日小家电", "items": ["手持小风扇", "制冰机", "冷萃咖啡壶"], "keywords": ["消暑小家电", "夏日必备"]},
+        {"category": "厨房降温", "items": ["凉霸", "厨房空调扇", "保温冰桶"], "keywords": ["厨房降温", "夏日烹饪"]}
+      ],
+      "marketing_themes": ["小暑清凉攻略", "节能空调节", "夏日小家电狂欢"],
+      "heat_level": 5,
+      "related_weather": "高温闷热",
+      "references": [125, 131]
+    },
+    {
+      "id": "dashu",
+      "name": "大暑",
+      "date_2026": "07-23",
+      "climate": "一年中最热时期，持续高温天气",
+      "consumer_psychology": "制冷需求达到全年峰值，愿意为舒适付费",
+      "categories": ["空调", "冷风扇", "冰箱/冰柜"],
+      "product_details": [
+        {"category": "空调", "items": ["智能空调", "中央空调", "移动空调"], "keywords": ["空调热卖", "极速制冷"]},
+        {"category": "冷风扇", "items": ["空调扇", "冷风机", "水冷扇"], "keywords": ["冷风扇", "空调扇"]},
+        {"category": "冰箱/冰柜", "items": ["大容量冰箱", "家用冰柜", "制冰冰箱"], "keywords": ["制冰", "冷饮", "冰箱"]},
+        {"category": "个人降温", "items": ["挂脖风扇", "降温贴", "便携风扇"], "keywords": ["便携降温", "随身风扇"]}
+      ],
+      "marketing_themes": ["大暑降温节", "全年最冷价", "清凉一夏"],
+      "heat_level": 5,
+      "related_weather": "持续高温",
+      "references": [127, 134]
+    },
+    {
+      "id": "liqiu",
+      "name": "立秋",
+      "date_2026": "08-07",
+      "climate": "秋季开始，暑气渐消，早晚温差增大",
+      "consumer_psychology": "贴秋膘养生，厨房家电需求上升，关注养生烹饪",
+      "categories": ["厨房电器", "养生电器", "烘焙设备"],
+      "product_details": [
+        {"category": "厨房电器", "items": ["电炖锅", "养生煲", "蒸烤一体机"], "keywords": ["贴秋膘", "秋季养生", "养生烹饪"]},
+        {"category": "养生电器", "items": ["养生壶", "破壁机", "豆浆机"], "keywords": ["养生", "秋季润燥"]},
+        {"category": "烘焙设备", "items": ["电烤箱", "空气炸锅", "面包机"], "keywords": ["烘焙", "秋季美食"]}
+      ],
+      "marketing_themes": ["立秋贴秋膘", "秋季养生厨房", "养生好物节"],
+      "heat_level": 4,
+      "related_weather": "早晚凉爽、午间炎热",
+      "references": [118, 123, 144]
+    },
+    {
+      "id": "chushu",
+      "name": "处暑",
+      "date_2026": "08-23",
+      "climate": "暑气结束，气温下降，夏秋交替",
+      "consumer_psychology": "换季保养意识强，家电清洁维护需求增加",
+      "categories": ["空调清洁", "家电保养", "换季收纳"],
+      "product_details": [
+        {"category": "空调清洁", "items": ["空调清洗剂", "空调清洗服务", "空调防尘罩"], "keywords": ["空调清洗", "换季保养"]},
+        {"category": "家电保养", "items": ["家电清洗服务", "冰箱除味剂", "洗衣机清洁剂"], "keywords": ["家电保养", "换季清洁"]},
+        {"category": "换季收纳", "items": ["夏装收纳袋", "衣物收纳箱", "被子收纳袋"], "keywords": ["换季收纳", "夏季收纳"]}
+      ],
+      "marketing_themes": ["处暑换季保养", "空调清洗季", "夏秋焕新攻略"],
+      "heat_level": 3,
+      "related_weather": "秋高气爽",
+      "references": [278, 281]
+    },
+    {
+      "id": "bailu",
+      "name": "白露",
+      "date_2026": "09-07",
+      "climate": "天气转凉，昼夜温差大，秋燥明显",
+      "consumer_psychology": "防秋燥、润养生，加湿器和养生电器需求上升",
+      "categories": ["加湿器", "养生电器", "保暖准备"],
+      "product_details": [
+        {"category": "加湿器", "items": ["超声波加湿器", "蒸发式加湿器", "香薰加湿器"], "keywords": ["加湿器", "防秋燥", "润燥"]},
+        {"category": "养生电器", "items": ["养生壶", "足浴盆", "按摩器"], "keywords": ["秋季养生", "润燥养生"]},
+        {"category": "保暖准备", "items": ["电热毯", "暖手宝", "电暖器"], "keywords": ["保暖准备", "秋冬预备"]}
+      ],
+      "marketing_themes": ["白露防秋燥", "秋季养生节", "润燥好物推荐"],
+      "heat_level": 4,
+      "related_weather": "干燥凉爽",
+      "references": [236, 247]
+    },
+    {
+      "id": "qiufen",
+      "name": "秋分",
+      "date_2026": "09-23",
+      "climate": "昼夜平分，气温宜人，秋季家装黄金期",
+      "consumer_psychology": "金九银十家装旺季，装修采购需求旺盛",
+      "categories": ["家装家电", "厨卫电器", "秋季养生"],
+      "product_details": [
+        {"category": "家装家电", "items": ["智能电视", "冰箱", "洗衣机"], "keywords": ["秋季家装节", "金九银十"]},
+        {"category": "厨卫电器", "items": ["油烟机", "洗碗机", "热水器"], "keywords": ["厨房焕新", "厨卫升级"]},
+        {"category": "秋季养生", "items": ["煲汤锅", "焖茶壶", "养生壶"], "keywords": ["秋季养生", "煲汤"]},
+        {"category": "家居软装", "items": ["秋冬四件套", "地毯", "窗帘"], "keywords": ["秋季软装", "家居焕新"]}
+      ],
+      "marketing_themes": ["秋季家装节", "金九银十焕新家", "秋分养生好物"],
+      "heat_level": 5,
+      "related_weather": "秋高气爽",
+      "references": [189, 191, 193, 195]
+    },
+    {
+      "id": "hanlu",
+      "name": "寒露",
+      "date_2026": "10-08",
+      "climate": "气温继续下降，寒意明显，秋冬转换",
+      "consumer_psychology": "保暖需求迫切，取暖设备开始热销",
+      "categories": ["取暖器", "保暖家电", "秋冬床品"],
+      "product_details": [
+        {"category": "取暖器", "items": ["电暖器", "暖风机", "小太阳"], "keywords": ["取暖器", "电暖气", "冬季保暖"]},
+        {"category": "保暖家电", "items": ["电热毯", "暖脚器", "加热桌垫"], "keywords": ["电热毯", "暖脚", "保暖"]},
+        {"category": "秋冬床品", "items": ["羽绒被", "羊毛被", "秋冬四件套"], "keywords": ["秋冬床品", "保暖被子"]}
+      ],
+      "marketing_themes": ["寒露保暖节", "取暖器选购", "冬日暖家攻略"],
+      "heat_level": 4,
+      "related_weather": "气温骤降",
+      "references": [200, 203]
+    },
+    {
+      "id": "shuangjiang",
+      "name": "霜降",
+      "date_2026": "10-23",
+      "climate": "秋季最后一个节气，气温骤降，初霜出现",
+      "consumer_psychology": "入冬前最后准备，过冬家电集中采购",
+      "categories": ["取暖设备", "除螨除湿", "冬季家电"],
+      "product_details": [
+        {"category": "取暖设备", "items": ["踢脚线取暖器", "油汀电暖器", "石墨烯取暖器"], "keywords": ["取暖器", "过冬必备"]},
+        {"category": "除螨除湿", "items": ["除螨仪", "烘干机", "暖被机"], "keywords": ["除螨", "暖被", "冬季准备"]},
+        {"category": "冬季家电", "items": ["电火锅", "养生壶", "保温壶"], "keywords": ["冬季美食", "暖冬家电"]}
+      ],
+      "marketing_themes": ["霜降入冬准备", "过冬家电一站购", "冬季取暖指南"],
+      "heat_level": 4,
+      "related_weather": "初霜、气温骤降",
+      "references": [279, 303]
+    },
+    {
+      "id": "lidong",
+      "name": "立冬",
+      "date_2026": "11-07",
+      "climate": "冬季开始，气温显著下降，北方开始供暖",
+      "consumer_psychology": "取暖需求爆发，暖经济全面升温",
+      "categories": ["取暖电器", "保暖家居", "冬季厨房"],
+      "product_details": [
+        {"category": "取暖电器", "items": ["电暖器", "踢脚线取暖器", "暖风机"], "keywords": ["立冬取暖", "电暖气", "冬季保暖"]},
+        {"category": "保暖家居", "items": ["电热毯", "暖手宝", "加热坐垫"], "keywords": ["保暖", "电热毯", "暖手宝"]},
+        {"category": "冬季厨房", "items": ["电火锅", "电炖锅", "养生壶"], "keywords": ["火锅", "冬季养生", "炖汤"]}
+      ],
+      "marketing_themes": ["立冬暖经济", "冬季取暖节", "暖冬好物推荐"],
+      "heat_level": 5,
+      "related_weather": "寒冷、北方供暖",
+      "references": [187, 188, 203]
+    },
+    {
+      "id": "xiaoxue",
+      "name": "小雪",
+      "date_2026": "11-22",
+      "climate": "气温继续下降，可能出现初雪，空气干燥",
+      "consumer_psychology": "深度保暖需求，加湿器与取暖器并重",
+      "categories": ["加湿取暖", "冬季护理", "保暖升级"],
+      "product_details": [
+        {"category": "加湿取暖", "items": ["加湿取暖器", "加湿器", "暖风机"], "keywords": ["加湿取暖", "冬季干燥"]},
+        {"category": "冬季护理", "items": ["电暖手套", "暖脚器", "电热护膝"], "keywords": ["冬季护理", "局部保暖"]},
+        {"category": "保暖升级", "items": ["羽绒被", "电热毯", "暖被机"], "keywords": ["保暖升级", "冬季床品"]}
+      ],
+      "marketing_themes": ["小雪暖冬计划", "加湿取暖节", "冬季舒适家居"],
+      "heat_level": 4,
+      "related_weather": "初雪、干燥寒冷",
+      "references": [209, 287]
+    },
+    {
+      "id": "daxue",
+      "name": "大雪",
+      "date_2026": "12-07",
+      "climate": "降雪增多，严寒加剧，取暖需求高峰",
+      "consumer_psychology": "取暖设备全面热销，追求高效保暖",
+      "categories": ["电暖器", "暖风机", "保暖家纺"],
+      "product_details": [
+        {"category": "电暖器", "items": ["石墨烯取暖器", "油汀电暖器", "踢脚线取暖器"], "keywords": ["石墨烯取暖", "高效取暖"]},
+        {"category": "暖风机", "items": ["浴室暖风机", "壁挂暖风机", "智能语音暖风机"], "keywords": ["暖风机", "智能语音"]},
+        {"category": "保暖家纺", "items": ["电热毯", "鹅绒被", "保暖四件套"], "keywords": ["电热毯", "鹅绒被", "冬季保暖"]}
+      ],
+      "marketing_themes": ["大雪取暖节", "石墨烯取暖专场", "寒冬保暖攻略"],
+      "heat_level": 5,
+      "related_weather": "严寒、降雪",
+      "references": [287, 209]
+    },
+    {
+      "id": "dongzhi",
+      "name": "冬至",
+      "date_2026": "12-22",
+      "climate": "白昼最短，进入数九寒天，最冷时期开始",
+      "consumer_psychology": "冬至大如年，团圆聚餐和养生保暖并重",
+      "categories": ["厨房电器", "保暖家纺", "养生电器"],
+      "product_details": [
+        {"category": "厨房电器", "items": ["电火锅", "电压力锅", "饺子机"], "keywords": ["冬至团圆", "火锅", "包饺子"]},
+        {"category": "保暖家纺", "items": ["羽绒被", "电热毯", "保暖床垫"], "keywords": ["冬季保暖", "冬至养生"]},
+        {"category": "养生电器", "items": ["养生壶", "足浴盆", "按摩椅"], "keywords": ["冬至养生", "冬季进补"]},
+        {"category": "餐具", "items": ["火锅套装", "保温餐具", "分餐保鲜盒"], "keywords": ["冬至聚餐", "保温餐具"]}
+      ],
+      "marketing_themes": ["冬至团圆节", "冬至养生好物", "冬日暖家宴"],
+      "heat_level": 4,
+      "related_weather": "严寒",
+      "references": [300, 304]
+    },
+    {
+      "id": "xiaohan",
+      "name": "小寒",
+      "date_2026": "01-05",
+      "climate": "一年中最冷时期之一，寒潮频繁",
+      "consumer_psychology": "极致保暖需求，冬季养生和取暖设备并重",
+      "categories": ["高效取暖", "冬季养生", "保暖升级"],
+      "product_details": [
+        {"category": "高效取暖", "items": ["智能取暖器", "变频电暖器", "暖风机"], "keywords": ["高效取暖", "节能取暖"]},
+        {"category": "冬季养生", "items": ["泡脚桶", "艾灸仪", "养生壶"], "keywords": ["冬季养生", "泡脚", "艾灸"]},
+        {"category": "保暖升级", "items": ["水暖毯", "电热毯", "加热床垫"], "keywords": ["水暖毯", "保暖升级"]}
+      ],
+      "marketing_themes": ["小寒保暖节", "最冷时节温暖守护", "冬季养生专场"],
+      "heat_level": 4,
+      "related_weather": "严寒、寒潮",
+      "references": [383, 398]
+    },
+    {
+      "id": "dahan",
+      "name": "大寒",
+      "date_2026": "01-20",
+      "climate": "一年中最冷时期，寒冬即将结束",
+      "consumer_psychology": "辞旧迎新，年末大扫除和家居焕新需求",
+      "categories": ["清洁家电", "家居焕新", "年货采购"],
+      "product_details": [
+        {"category": "清洁家电", "items": ["扫地机器人", "洗地机", "布艺清洗机"], "keywords": ["年末大扫除", "全屋清洁"]},
+        {"category": "家居焕新", "items": ["除螨仪", "空气净化器", "蒸汽清洁机"], "keywords": ["焕新家", "除螨除菌"]},
+        {"category": "年货采购", "items": ["电火锅", "多功能锅", "保温餐具"], "keywords": ["年货", "团圆聚餐"]},
+        {"category": "换季准备", "items": ["真空收纳袋", "收纳箱", "换季整理盒"], "keywords": ["换季收纳", "春季准备"]}
+      ],
+      "marketing_themes": ["大寒年末大扫除", "焕新迎新年", "年货节预热"],
+      "heat_level": 4,
+      "related_weather": "严寒",
+      "references": [383, 384, 398]
+    }
+  ],
+  "summary_statistics": {
+    "heat_level_distribution": {
+      "5_star": ["春分", "夏至", "小暑", "大暑", "秋分", "立冬", "大雪"],
+      "4_star": ["立春", "惊蛰", "清明", "立秋", "白露", "寒露", "霜降", "小雪", "大雪", "冬至", "小寒", "大寒"],
+      "3_star": ["雨水", "谷雨", "立夏", "小满", "芒种", "处暑"]
+    },
+    "category_occurrence_top10": [
+      {"category": "取暖设备", "count": 8},
+      {"category": "空调/制冷", "count": 7},
+      {"category": "厨房电器", "count": 7},
+      {"category": "除湿防潮", "count": 6},
+      {"category": "清洁家电", "count": 6},
+      {"category": "养生电器", "count": 6},
+      {"category": "床品家纺", "count": 5},
+      {"category": "加湿器", "count": 4},
+      {"category": "收纳整理", "count": 4},
+      {"category": "户外用品", "count": 1}
+    ],
+    "peak_terms": {
+      "spring_peak": "春分（家装旺季）",
+      "summer_peak": "夏至-大暑（制冷高峰）",
+      "autumn_peak": "秋分（秋季家装）",
+      "winter_peak": "立冬-大雪（取暖高峰）"
+    }
+  }
+}
