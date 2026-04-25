@@ -11,7 +11,7 @@ const LAT = 30.27;
 const LON = 120.15;
 
 interface OpenMeteoCurrent {
-  temperature: number;
+  temperature_2m: number;
   relative_humidity_2m: number;
   weather_code: number;
   wind_speed_10m: number;
@@ -86,12 +86,15 @@ export async function crawlWeather(): Promise<{ data: WeatherData; result: Crawl
 
     const conditionInfo = getWeatherCondition(current.weather_code);
 
+    const temp = Number.isFinite(current.temperature_2m) ? Math.round(current.temperature_2m) : 22;
+    const hum = Number.isFinite(current.relative_humidity_2m) ? Math.round(current.relative_humidity_2m) : 65;
+
     const data: WeatherData = {
       city: DEFAULT_CITY,
-      temperature: Math.round(current.temperature),
+      temperature: temp,
       condition: conditionInfo.label,
-      humidity: Math.round(current.relative_humidity_2m),
-      tip: generateWeatherTip(conditionInfo.label, current.relative_humidity_2m, current.temperature),
+      humidity: hum,
+      tip: generateWeatherTip(conditionInfo.label, hum, temp),
       icon: conditionInfo.icon,
     };
 

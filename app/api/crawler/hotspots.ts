@@ -159,9 +159,9 @@ export async function generateDailySnapshot(
     highPriorityCount: highPriority.length,
     description,
     weatherCity: weather.city,
-    weatherTemp: weather.temperature,
+    weatherTemp: Number.isFinite(weather.temperature) ? weather.temperature : 22,
     weatherCondition: weather.condition,
-    weatherHumidity: weather.humidity,
+    weatherHumidity: Number.isFinite(weather.humidity) ? weather.humidity : 65,
     weatherTip: weather.tip,
     solarTerm: solar.name,
     snapshot: {
