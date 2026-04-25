@@ -49,7 +49,7 @@ export function DateProvider({ children }: { children: React.ReactNode }) {
   const [selectedDate, setSelectedDate] = useState<Date>(() => {
     const fromUrl = getDateFromHashUrl();
     if (fromUrl) return fromUrl;
-    return new Date('2026-04-22T00:00:00');
+    return new Date();
   });
 
   const dateStr = useMemo(() => {
