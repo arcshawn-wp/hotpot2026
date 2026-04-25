@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   TrendingUp, TrendingDown, Minus,
@@ -322,11 +322,8 @@ const ActionSuggestionsCard: React.FC<{ suggestions: string[] }> = ({ suggestion
 /* ------------------------------------------------------------------ */
 /*  RelatedProductsCard                                               */
 /* ------------------------------------------------------------------ */
-const RelatedProductsCard: React.FC<{ productIds: string[] }> = ({ productIds }) => {
+const RelatedProductsCard: React.FC<{ products: any[] }> = ({ products }) => {
   const navigate = useNavigate();
-  const products = useMemo(() => {
-    return quickProducts.filter(p => productIds.includes(p.id));
-  }, [productIds]);
 
   if (products.length === 0) return null;
 
@@ -342,9 +339,9 @@ const RelatedProductsCard: React.FC<{ productIds: string[] }> = ({ productIds })
         </button>
       </div>
       <div className="space-y-2.5">
-        {products.map((p) => (
+        {products.map((p, idx) => (
           <div
-            key={p.id}
+            key={p.productId || p.id || idx}
             className="flex items-center gap-3 p-3 rounded-lg bg-bg-input hover:bg-bg-elevated transition-colors cursor-pointer group"
             onClick={() => navigate('/products')}
           >
@@ -353,13 +350,13 @@ const RelatedProductsCard: React.FC<{ productIds: string[] }> = ({ productIds })
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-xs font-medium text-text-primary truncate group-hover:text-accent-blue transition-colors">{p.name}</p>
-              <p className="text-[10px] text-text-tertiary">{p.reason}</p>
+              <p className="text-[10px] text-text-tertiary">{p.reason || p.sourceHotspot || ''}</p>
             </div>
             <div className="text-right shrink-0">
               <div style={{ width: 50 }}>
-                <HeatProgressBar value={p.heatScore} height={3} />
+                <HeatProgressBar value={p.heatScore || 0} height={3} />
               </div>
-              <span className="text-[10px] text-text-tertiary mt-0.5 block">热度{p.heatScore}</span>
+              <span className="text-[10px] text-text-tertiary mt-0.5 block">热度{p.heatScore || 0}</span>
             </div>
           </div>
         ))}
@@ -429,7 +426,7 @@ const HotspotDetailPage: React.FC = () => {
   // Extract data from API response
   const hotspot = apiHotspot;
   const dimConfig = DIMENSION_CONFIG[hotspot.dimension];
-  const productIds = (relatedProducts || []).map((p: any) => p.productId || p.id);
+  const apiProducts = (relatedProducts || []) as any[];
 
   // Build trend data
   const trend = trendData?.trend || hotspot.trend || [];
@@ -451,7 +448,7 @@ const HotspotDetailPage: React.FC = () => {
 
   // Build action suggestions
   const actionSuggestions = [
-    `主推${(relatedProducts || []).slice(0, 2).map((p: any) => p.name).join('、')}作为核心爆品`,
+    `主推${apiProducts.slice(0, 2).map((p: any) => p.name).join('、') || '热门商品'}作为核心爆品`,
     '制作热点对比短视频引流',
     '联合垂类博主做专场直播',
     `设置满减优惠券，覆盖${hotspot.title}场景`,
@@ -462,7 +459,7 @@ const HotspotDetailPage: React.FC = () => {
       {/* TopBar */}
       <TopBar
         title={hotspot.title}
-        subtitle={`${dimConfig.label} · 热度${hotspot.heatScore} · ${(relatedProducts || []).length}款选品`}
+        subtitle={`${dimConfig.label} · 热度${hotspot.heatScore} · ${apiProducts.length}款选品`}
       />
 
       <div className="max-w-[1200px] mx-auto px-4 py-6 space-y-5">
@@ -537,7 +534,7 @@ const HotspotDetailPage: React.FC = () => {
         {/* ====== Section 6: Action Suggestions + Related Products ====== */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           <ActionSuggestionsCard suggestions={actionSuggestions} />
-          <RelatedProductsCard productIds={productIds} />
+          <RelatedProductsCard products={apiProducts} />
         </div>
 
         {/* ====== Section 7: Script Template ====== */}
