@@ -2,7 +2,7 @@ import { z } from "zod";
 import { createRouter, publicQuery } from "../middleware";
 import { getDb } from "../queries/connection";
 import { hotspots, platformDiscussions, dailySnapshots, products, hotspotProducts, scripts } from "@db/schema";
-import { eq, sql, inArray } from "drizzle-orm";
+import { and, eq, sql, lte, gte, inArray } from "drizzle-orm";
 
 // 热点数据适配：将数据库格式转换为前端期望的格式
 function adaptHotspot(dbRecord: typeof hotspots.$inferSelect) {
@@ -36,7 +36,10 @@ export const hotspotRouter = createRouter({
         .select()
         .from(hotspots)
         .where(
-          sql`${hotspots.startDate} <= ${input.date} AND ${hotspots.endDate} >= ${input.date}`
+          and(
+            lte(hotspots.startDate, input.date),
+            gte(hotspots.endDate, input.date)
+          )
         )
         .orderBy(sql`${hotspots.heatScore} DESC`);
 
@@ -178,7 +181,10 @@ export const hotspotRouter = createRouter({
         .select()
         .from(hotspots)
         .where(
-          sql`${hotspots.startDate} <= ${input.date} AND ${hotspots.endDate} >= ${input.date}`
+          and(
+            lte(hotspots.startDate, input.date),
+            gte(hotspots.endDate, input.date)
+          )
         );
 
       const dims = ["weather", "solar_term", "holiday", "trend", "renovation"] as const;

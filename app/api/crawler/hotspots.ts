@@ -1,4 +1,4 @@
-import { eq, sql, and } from "drizzle-orm";
+import { eq, sql, and, lte, gte } from "drizzle-orm";
 import { getDb } from "../queries/connection";
 import { hotspots, platformDiscussions, dailySnapshots, crawlLogs } from "@db/schema";
 import type { WeatherData, PlatformCrawlData, DailySnapshotInput, CrawlResult } from "./types";
