@@ -2,6 +2,7 @@ import { crawlWeather } from "./weather";
 import { crawlWeibo } from "./weibo";
 import { crawlDouyin } from "./douyin";
 import { crawlXiaohongshu } from "./xiaohongshu";
+import { updateProductPrices } from "./product-updater";
 import {
   getTodayStr,
   getHotspotsForMatching,
@@ -95,6 +96,20 @@ export async function runFullCrawl(): Promise<FullCrawlResult> {
     xhsRes.result,
   ];
   await saveCrawlLogs(crawlResults);
+
+  // 5.5 更新商品京东价格（有 JD Union API Key 时执行）
+  let priceResult: CrawlResult | null = null;
+  if (process.env.JD_UNION_APP_KEY && process.env.JD_UNION_SECRET_KEY) {
+    console.log("[Crawler] Updating product prices via JD Union API...");
+    priceResult = await updateProductPrices();
+    console.log(
+      `[Crawler] Price update: ${priceResult.status} (${priceResult.recordsCount} updated)`
+    );
+    crawlResults.push(priceResult);
+    await saveCrawlLogs([priceResult]);
+  } else {
+    console.log("[Crawler] JD Union API not configured, skipping price update.");
+  }
 
   // 6. 生成每日快照
   const snapshot = await generateDailySnapshot(weather, crawlResults);

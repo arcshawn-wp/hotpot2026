@@ -79,6 +79,16 @@ export const products = mysqlTable(
     sourceHotspot: varchar("source_hotspot", { length: 255 }),
     script: text("script"),
     scriptCount: int("script_count").default(0),
+    /** 多平台价格 JSON: { jd: {price, skuId, url, shopName, updatedAt}, tmall: {...}, pdd: {...} } */
+    platformPrices: json("platform_prices").$type<Record<string, {
+      price: number;
+      skuId?: string;
+      url?: string;
+      shopName?: string;
+      updatedAt?: string;
+    }>>(),
+    /** 价格最后更新时间 */
+    priceUpdatedAt: timestamp("price_updated_at"),
     createdAt: timestamp("created_at").notNull().defaultNow(),
   },
   (table) => [index("idx_products_hotspot").on(table.sourceHotspot)]
