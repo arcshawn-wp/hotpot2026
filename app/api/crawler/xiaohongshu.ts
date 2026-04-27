@@ -2,28 +2,23 @@ import type { PlatformCrawlData, CrawlResult, HotSearchItem } from "./types";
 import { fetchWithTimeout } from "./lib";
 
 // ============================================================
-// 小红书热点采集 — Cookie 登录态 + 反封号保护
+// 小红书热点采集 — 探索页 SSR 数据抓取
 //
-// 策略要点：
-// 1. 通过环境变量 XHS_COOKIE 注入登录态
-// 2. 每 2 天才真正执行一次爬取（其余天跳过）
-// 3. 单次爬取上限 12 个请求，间隔 15-30 秒
-// 4. 任何风控信号立即终止，保护账号
+// 策略：抓取 xiaohongshu.com/explore 页面 HTML，
+// 从 __INITIAL_STATE__ 中提取首页推荐的 noteCard 数据。
+// 优势：
+// - 只需 1 次 HTTP 请求（远低于任何风控阈值）
+// - 不需要 x-s 签名，只需 Cookie
+// - 每次返回约 35 条笔记数据
+// - 每 2 天执行一次，模拟偶尔刷小红书的普通用户
 // ============================================================
 
 // ---- 配置 ----
-const XHS_CRAWL_INTERVAL_DAYS = 2;     // 最小爬取间隔（天）
-const XHS_MAX_REQUESTS_PER_SESSION = 12; // 单次最大请求数
-const XHS_MIN_DELAY_MS = 15000;         // 请求最小间隔 15s
-const XHS_MAX_DELAY_MS = 30000;         // 请求最大间隔 30s
-const XHS_BATCH_PAUSE_AFTER = 5;        // 每 5 个请求后长暂停
-const XHS_BATCH_PAUSE_MIN_MS = 60000;   // 批次暂停最小 60s
-const XHS_BATCH_PAUSE_MAX_MS = 150000;  // 批次暂停最大 150s
-const XHS_MAX_HOT_TOPICS = 8;           // 只取 Top8
-
-// ---- 上次爬取时间跟踪（进程内存 + 文件持久化） ----
-let lastSuccessfulCrawlAt = 0;
+const XHS_CRAWL_INTERVAL_DAYS = 2;
 const LAST_CRAWL_FILE = "/tmp/xhs-last-crawl.txt";
+let lastSuccessfulCrawlAt = 0;
+
+// ---- 上次爬取时间管理 ----
 
 async function loadLastCrawlTime(): Promise<number> {
   if (lastSuccessfulCrawlAt > 0) return lastSuccessfulCrawlAt;
@@ -42,171 +37,113 @@ async function saveLastCrawlTime(): Promise<void> {
   try {
     const { writeFile } = await import("fs/promises");
     await writeFile(LAST_CRAWL_FILE, String(lastSuccessfulCrawlAt), "utf-8");
-  } catch {
-    // 写入失败不影响主流程
-  }
+  } catch {}
 }
 
-// ---- 工具函数 ----
+// ---- 核心：从探索页 HTML 提取数据 ----
 
-/** 随机延迟（高斯抖动模拟人类行为） */
-function randomDelay(minMs: number, maxMs: number): number {
-  // Box-Muller 高斯随机，集中在中间值
-  let u = 0, v = 0;
-  while (u === 0) u = Math.random();
-  while (v === 0) v = Math.random();
-  const gaussian = Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
-  const normalized = Math.max(-1, Math.min(1, gaussian / 2));
-  const mid = (minMs + maxMs) / 2;
-  const range = (maxMs - minMs) / 2;
-  return Math.round(mid + normalized * range);
+interface XhsNoteCard {
+  displayTitle: string;
+  noteId?: string;
+  type?: string;
+  likedCount: number;
+  nickname: string;
 }
 
-function sleep(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+/**
+ * 从 __INITIAL_STATE__ JSON 中递归查找所有 noteCard
+ */
+function extractNoteCards(obj: any, results: XhsNoteCard[] = [], depth = 0): XhsNoteCard[] {
+  if (!obj || typeof obj !== "object" || depth > 15) return results;
 
-/** 获取 Cookie 并构建请求头 */
-function getXhsHeaders(): Record<string, string> | null {
-  const cookie = process.env.XHS_COOKIE;
-  if (!cookie) return null;
+  // 检测当前对象是否是 noteCard
+  if (obj.displayTitle && typeof obj.displayTitle === "string") {
+    const card: XhsNoteCard = {
+      displayTitle: obj.displayTitle,
+      noteId: obj.noteId || obj.id || "",
+      type: obj.type || "",
+      likedCount: 0,
+      nickname: "",
+    };
 
-  return {
-    accept: "application/json",
-    "accept-language": "zh-CN,zh;q=0.9",
-    "content-type": "application/json;charset=UTF-8",
-    origin: "https://www.xiaohongshu.com",
-    referer: "https://www.xiaohongshu.com/explore",
-    "user-agent":
-      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-    cookie,
-  };
-}
+    // 提取互动数据
+    if (obj.interactInfo) {
+      card.likedCount = parseInt(obj.interactInfo.likedCount || "0", 10) || 0;
+    }
 
-/** 检测响应中的风控信号，返回 true 表示检测到风控 */
-function detectRisk(status: number, body: string): { isRisk: boolean; signal: string } {
-  if (status === 401 || status === 403) {
-    return { isRisk: true, signal: `HTTP ${status} — Cookie 可能失效或账号受限` };
+    // 提取用户信息
+    if (obj.user) {
+      card.nickname = obj.user.nickname || obj.user.nickName || "";
+    }
+
+    results.push(card);
   }
-  if (status === 429) {
-    return { isRisk: true, signal: "HTTP 429 — 请求频率过高" };
-  }
-  const lower = body.toLowerCase();
-  if (lower.includes("验证") || lower.includes("captcha") || lower.includes("verify")) {
-    return { isRisk: true, signal: "触发验证码" };
-  }
-  if (lower.includes("频繁") || lower.includes("too many") || lower.includes("rate limit")) {
-    return { isRisk: true, signal: "频率限制" };
-  }
-  if (lower.includes("账号") && (lower.includes("限制") || lower.includes("封") || lower.includes("lock"))) {
-    return { isRisk: true, signal: "账号受限" };
-  }
-  return { isRisk: false, signal: "" };
-}
 
-// ---- API 请求（带 Cookie） ----
+  // 如果有 noteCard 子对象，也检查
+  if (obj.noteCard) {
+    extractNoteCards(obj.noteCard, results, depth + 1);
+  }
 
-/** 获取小红书热搜列表 */
-async function fetchHotListWithCookie(headers: Record<string, string>): Promise<HotSearchItem[]> {
-  // 尝试两个 endpoint
-  const endpoints = [
-    "https://edith.xiaohongshu.com/api/sns/web/v1/search/hot_list",
-    "https://www.xiaohongshu.com/api/sns/web/v1/search/trending",
-  ];
-
-  for (const url of endpoints) {
-    try {
-      const res = await fetchWithTimeout(url, { headers, timeout: 15000 });
-      const text = await res.text();
-
-      // 风控检测
-      const risk = detectRisk(res.status, text);
-      if (risk.isRisk) {
-        console.log(`[XHS] 热搜接口风控信号: ${risk.signal} (${url})`);
-        return []; // 返回空，外层会处理
+  // 递归遍历数组和对象
+  if (Array.isArray(obj)) {
+    for (const item of obj) {
+      extractNoteCards(item, results, depth + 1);
+    }
+  } else {
+    for (const key of Object.keys(obj)) {
+      if (key === "noteCard" || key === "items" || key === "feeds" ||
+          key === "feed" || key === "homeFeed" || key === "recommend") {
+        extractNoteCards(obj[key], results, depth + 1);
       }
-
-      if (!res.ok) continue;
-
-      const json = JSON.parse(text);
-      const items = json?.data?.items || json?.data?.queries || json?.data?.list || [];
-
-      const parsed: HotSearchItem[] = items
-        .slice(0, 30)
-        .map((item: any, idx: number) => ({
-          rank: item.rank || idx + 1,
-          title: (item.title || item.query || item.name || item.word || "").trim(),
-          heat: item.hot_value || item.score || item.view_count || 0,
-          tag: item.tag || "",
-        }))
-        .filter((i: HotSearchItem) => i.title);
-
-      if (parsed.length > 0) {
-        console.log(`[XHS] 热搜获取成功: ${parsed.length} 条 (${url})`);
-        return parsed;
-      }
-    } catch (err: any) {
-      console.log(`[XHS] 热搜接口异常: ${err.message} (${url})`);
     }
   }
 
-  return [];
+  return results;
 }
 
-/** 搜索笔记 */
-async function searchNotesWithCookie(
-  headers: Record<string, string>,
-  keyword: string
-): Promise<HotSearchItem[]> {
+/**
+ * 抓取小红书探索页并提取笔记数据
+ */
+async function fetchExplorePage(cookie: string): Promise<XhsNoteCard[]> {
+  const res = await fetchWithTimeout("https://www.xiaohongshu.com/explore", {
+    headers: {
+      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "accept-language": "zh-CN,zh;q=0.9",
+      "user-agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+      cookie,
+    },
+    timeout: 20000,
+  });
+
+  if (!res.ok) {
+    throw new Error(`探索页 HTTP ${res.status}`);
+  }
+
+  const html = await res.text();
+
+  // 提取 __INITIAL_STATE__ JSON
+  const match = html.match(/__INITIAL_STATE__\s*=\s*({.+?})\s*<\/script>/s);
+  if (!match) {
+    throw new Error("未找到 __INITIAL_STATE__");
+  }
+
+  let jsonStr = match[1];
+  // 小红书的 JSON 中可能有 undefined 值，替换为 null
+  jsonStr = jsonStr.replace(/\bundefined\b/g, "null");
+
+  let state: any;
   try {
-    const res = await fetchWithTimeout(
-      "https://edith.xiaohongshu.com/api/sns/web/v1/search/notes",
-      {
-        method: "POST",
-        headers,
-        body: JSON.stringify({
-          keyword,
-          page: 1,
-          page_size: 20,
-          search_id: Math.random().toString(36).slice(2, 18),
-          sort: "general",
-          note_type: 0,
-        }),
-        timeout: 15000,
-      }
-    );
-
-    const text = await res.text();
-
-    // 风控检测
-    const risk = detectRisk(res.status, text);
-    if (risk.isRisk) {
-      console.log(`[XHS] 搜索风控信号: ${risk.signal} (关键词: ${keyword})`);
-      throw new Error(`RISK: ${risk.signal}`);
-    }
-
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-
-    const json = JSON.parse(text);
-    const items = json?.data?.items || json?.data?.notes || [];
-
-    return items.slice(0, 5).map((item: any, idx: number) => {
-      const note = item.note_card || item.note || item;
-      return {
-        rank: idx + 1,
-        title: note.display_title || note.title || keyword,
-        heat: note.interact_info?.liked_count || note.likes || 0,
-        url: note.note_id
-          ? `https://www.xiaohongshu.com/explore/${note.note_id}`
-          : "",
-        tag: note.user?.nickname || "",
-      };
-    });
-  } catch (err: any) {
-    if (err.message.startsWith("RISK:")) throw err; // 风控错误向上传播
-    console.log(`[XHS] 搜索失败(${keyword}): ${err.message}`);
-    return [];
+    state = JSON.parse(jsonStr);
+  } catch {
+    throw new Error("__INITIAL_STATE__ JSON 解析失败");
   }
+
+  // 递归提取所有 noteCard
+  const cards = extractNoteCards(state);
+  console.log(`[XHS] 从探索页提取到 ${cards.length} 条笔记`);
+
+  return cards;
 }
 
 // ---- 主入口 ----
@@ -216,21 +153,18 @@ export async function crawlXiaohongshu(): Promise<{
   items: HotSearchItem[];
   result: CrawlResult;
 }> {
-  // ====== 1. 检查是否配置了 Cookie ======
-  const headers = getXhsHeaders();
-  if (!headers) {
-    console.log("[XHS] 未配置 XHS_COOKIE 环境变量，使用无登录态模式");
-    return crawlWithoutCookie();
+  // 1. 检查 Cookie
+  const cookie = process.env.XHS_COOKIE;
+  if (!cookie) {
+    console.log("[XHS] 未配置 XHS_COOKIE，跳过");
+    return makeEmpty("未配置 XHS_COOKIE 环境变量");
   }
 
-  // ====== 2. 检查爬取间隔 ======
+  // 2. 检查爬取间隔
   const lastCrawl = await loadLastCrawlTime();
-  const daysSinceLastCrawl = (Date.now() - lastCrawl) / (24 * 3600_000);
-
-  if (lastCrawl > 0 && daysSinceLastCrawl < XHS_CRAWL_INTERVAL_DAYS) {
-    console.log(
-      `[XHS] 距上次爬取仅 ${daysSinceLastCrawl.toFixed(1)} 天，未满 ${XHS_CRAWL_INTERVAL_DAYS} 天间隔，跳过`
-    );
+  const daysSince = (Date.now() - lastCrawl) / (24 * 3600_000);
+  if (lastCrawl > 0 && daysSince < XHS_CRAWL_INTERVAL_DAYS) {
+    console.log(`[XHS] 距上次爬取 ${daysSince.toFixed(1)} 天，未满 ${XHS_CRAWL_INTERVAL_DAYS} 天，跳过`);
     return {
       data: {
         platform: "xiaohongshu",
@@ -238,7 +172,7 @@ export async function crawlXiaohongshu(): Promise<{
         postCount: 0,
         readCount: 0,
         sentiment: "neutral",
-        hotPosts: [`小红书每${XHS_CRAWL_INTERVAL_DAYS}天更新一次，下次更新预计在${Math.ceil(XHS_CRAWL_INTERVAL_DAYS - daysSinceLastCrawl)}天后`],
+        hotPosts: [`小红书每${XHS_CRAWL_INTERVAL_DAYS}天更新，下次约${Math.ceil(XHS_CRAWL_INTERVAL_DAYS - daysSince)}天后`],
         topKeywords: [],
       },
       items: [],
@@ -246,221 +180,88 @@ export async function crawlXiaohongshu(): Promise<{
     };
   }
 
-  // ====== 3. 检查活跃时段（北京时间 7:00-23:00） ======
-  const chinaTime = new Date(Date.now() + 8 * 3600_000); // UTC+8
-  const chinaHour = chinaTime.getUTCHours();
+  // 3. 检查活跃时段（北京时间 7:00-23:00）
+  const chinaHour = new Date().getHours(); // 容器已设 TZ=Asia/Shanghai
   if (chinaHour < 7 || chinaHour >= 23) {
-    console.log(`[XHS] 当前北京时间 ${chinaHour} 点，非活跃时段(7-23)，跳过`);
-    return {
-      data: {
-        platform: "xiaohongshu",
-        platformName: "小红书",
-        postCount: 0,
-        readCount: 0,
-        sentiment: "neutral",
-        hotPosts: ["小红书爬取仅在北京时间 7:00-23:00 执行"],
-        topKeywords: [],
-      },
-      items: [],
-      result: { source: "xiaohongshu", status: "success", recordsCount: 0 },
-    };
+    console.log(`[XHS] 北京时间 ${chinaHour} 点，非活跃时段，跳过`);
+    return makeEmpty("非活跃时段(7-23)");
   }
 
-  console.log("[XHS] ===== 开始 Cookie 模式爬取 =====");
-  let requestCount = 0;
-  let riskTriggered = false;
+  console.log("[XHS] ===== 开始探索页数据抓取 =====");
 
   try {
-    // ====== 4. 预热等待（模拟打开 App 的加载时间） ======
-    const warmupDelay = randomDelay(3000, 8000);
-    console.log(`[XHS] 预热等待 ${Math.round(warmupDelay / 1000)}s...`);
-    await sleep(warmupDelay);
+    // 4. 只需 1 次请求：抓取探索页
+    const cards = await fetchExplorePage(cookie);
 
-    // ====== 5. 获取热搜列表 ======
-    const hotItems = await fetchHotListWithCookie(headers);
-    requestCount++;
-
-    // 使用热搜关键词 或 兜底关键词
-    let keywords: string[];
-    if (hotItems.length > 0) {
-      keywords = hotItems.slice(0, XHS_MAX_HOT_TOPICS).map((i) => i.title);
-    } else {
-      // 热搜获取失败，用通用关键词兜底
-      keywords = ["直播带货", "热门种草", "穿搭分享", "美妆推荐", "好物分享"];
-      console.log("[XHS] 热搜为空，使用兜底关键词");
+    if (cards.length === 0) {
+      console.log("[XHS] 探索页未提取到笔记数据");
+      return makeEmpty("探索页无数据（Cookie 可能失效）");
     }
 
-    // ====== 6. 逐个搜索话题详情 ======
-    const allItems: HotSearchItem[] = hotItems.length > 0 ? hotItems : [];
-    const hotPosts: string[] = [];
-    const topKeywords: string[] = [];
+    // 5. 按点赞数排序，提取热门内容
+    const sorted = [...cards].sort((a, b) => b.likedCount - a.likedCount);
+    const totalLikes = sorted.reduce((sum, c) => sum + c.likedCount, 0);
 
-    for (let i = 0; i < keywords.length && requestCount < XHS_MAX_REQUESTS_PER_SESSION; i++) {
-      // 请求间随机延迟
-      let delay = randomDelay(XHS_MIN_DELAY_MS, XHS_MAX_DELAY_MS);
+    const hotPosts = sorted.slice(0, 5).map(
+      (c) => `${c.displayTitle}${c.likedCount > 0 ? ` (${c.likedCount}赞)` : ""}`
+    );
 
-      // 每 N 个请求后额外长暂停
-      if (i > 0 && i % XHS_BATCH_PAUSE_AFTER === 0) {
-        const batchPause = randomDelay(XHS_BATCH_PAUSE_MIN_MS, XHS_BATCH_PAUSE_MAX_MS);
-        console.log(`[XHS] 批次暂停 ${Math.round(batchPause / 1000)}s (已完成 ${i} 个话题)`);
-        delay += batchPause;
-      }
+    const topKeywords = sorted
+      .slice(0, 10)
+      .map((c) => c.displayTitle)
+      .filter((t) => t.length > 2 && t.length < 30);
 
-      console.log(`[XHS] 等待 ${Math.round(delay / 1000)}s → 搜索 #${i + 1}: ${keywords[i]}`);
-      await sleep(delay);
-
-      try {
-        const results = await searchNotesWithCookie(headers, keywords[i]);
-        requestCount++;
-
-        topKeywords.push(keywords[i]);
-
-        if (results.length > 0) {
-          // 取搜索结果的标题作为 hotPosts
-          const topPost = results[0];
-          hotPosts.push(
-            `${keywords[i]}: ${topPost.title}${topPost.heat ? ` (${topPost.heat}赞)` : ""}`
-          );
-          allItems.push(...results);
-        } else {
-          hotPosts.push(keywords[i]);
-        }
-      } catch (err: any) {
-        if (err.message.startsWith("RISK:")) {
-          console.log(`[XHS] ⚠️ 风控触发，立即停止保护账号: ${err.message}`);
-          riskTriggered = true;
-          break;
-        }
-        requestCount++;
-        console.log(`[XHS] 搜索异常(${keywords[i]}): ${err.message}`);
-      }
-    }
-
-    // ====== 7. 构建返回数据 ======
-    const totalHeat = allItems.reduce((sum, i) => sum + (i.heat || 0), 0);
+    const items: HotSearchItem[] = sorted.map((c, idx) => ({
+      rank: idx + 1,
+      title: c.displayTitle,
+      heat: c.likedCount,
+      url: c.noteId ? `https://www.xiaohongshu.com/explore/${c.noteId}` : "",
+      tag: c.nickname,
+    }));
 
     const data: PlatformCrawlData = {
       platform: "xiaohongshu",
       platformName: "小红书",
-      postCount: allItems.length,
-      readCount: Math.floor(totalHeat / 10000),
-      sentiment: riskTriggered ? "neutral" : "positive",
-      hotPosts: hotPosts.slice(0, 5),
-      topKeywords: topKeywords.slice(0, 10),
+      postCount: cards.length,
+      readCount: Math.floor(totalLikes / 100),
+      sentiment: "positive",
+      hotPosts,
+      topKeywords,
     };
 
-    // 只要拿到了一些数据就算成功
-    if (allItems.length > 0 || topKeywords.length > 0) {
-      await saveLastCrawlTime();
-      console.log(
-        `[XHS] ===== 完成: ${allItems.length} 条结果, ${requestCount} 次请求${riskTriggered ? " (风控提前终止)" : ""} =====`
-      );
-    }
+    // 6. 保存爬取时间
+    await saveLastCrawlTime();
+
+    console.log(`[XHS] ===== 完成: ${cards.length} 条笔记, 最高赞 ${sorted[0]?.likedCount || 0} =====`);
 
     return {
       data,
-      items: allItems,
-      result: {
-        source: "xiaohongshu",
-        status: riskTriggered ? "partial" : allItems.length > 0 ? "success" : "error",
-        recordsCount: allItems.length,
-        errorMessage: riskTriggered ? "风控信号触发，提前终止" : undefined,
-      },
+      items,
+      result: { source: "xiaohongshu", status: "success", recordsCount: cards.length },
     };
   } catch (err: any) {
-    console.warn("[XHS] 爬取异常:", err.message);
-    return {
-      data: {
-        platform: "xiaohongshu",
-        platformName: "小红书",
-        postCount: 0,
-        readCount: 0,
-        sentiment: "neutral",
-        hotPosts: [`小红书爬取异常: ${err.message}`],
-        topKeywords: [],
-      },
-      items: [],
-      result: {
-        source: "xiaohongshu",
-        status: "error",
-        recordsCount: 0,
-        errorMessage: err.message || String(err),
-      },
-    };
+    console.warn("[XHS] 抓取失败:", err.message);
+    return makeEmpty(err.message);
   }
 }
 
-// ---- 无 Cookie 的兜底模式（原有逻辑简化版） ----
-
-async function crawlWithoutCookie(): Promise<{
-  data: PlatformCrawlData;
-  items: HotSearchItem[];
-  result: CrawlResult;
-}> {
-  try {
-    const res = await fetchWithTimeout(
-      "https://edith.xiaohongshu.com/api/sns/web/v1/search/hot_list",
-      {
-        headers: {
-          accept: "application/json",
-          "accept-language": "zh-CN,zh;q=0.9",
-          origin: "https://www.xiaohongshu.com",
-          referer: "https://www.xiaohongshu.com/",
-          "user-agent":
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-        },
-      }
-    );
-
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-
-    const json = await res.json() as any;
-    const items = (json?.data?.items || json?.data?.queries || [])
-      .slice(0, 30)
-      .map((item: any, idx: number) => ({
-        rank: idx + 1,
-        title: (item.word || item.name || item.query || "").trim(),
-        heat: item.score || item.hot_value || 0,
-        tag: "",
-      }))
-      .filter((i: HotSearchItem) => i.title);
-
-    if (items.length === 0) throw new Error("No data returned");
-
-    const totalHeat = items.reduce((sum: number, i: HotSearchItem) => sum + (i.heat || 0), 0);
-
-    return {
-      data: {
-        platform: "xiaohongshu",
-        platformName: "小红书",
-        postCount: items.length,
-        readCount: Math.floor(totalHeat / 10000),
-        sentiment: "positive",
-        hotPosts: items.slice(0, 5).map((i: HotSearchItem) => i.title),
-        topKeywords: items.slice(0, 10).map((i: HotSearchItem) => i.title),
-      },
-      items,
-      result: { source: "xiaohongshu", status: "success", recordsCount: items.length },
-    };
-  } catch (err: any) {
-    console.warn("[XHS] 无Cookie模式也失败:", err.message);
-    return {
-      data: {
-        platform: "xiaohongshu",
-        platformName: "小红书",
-        postCount: 0,
-        readCount: 0,
-        sentiment: "neutral",
-        hotPosts: ["小红书热点暂不可用（未配置Cookie或接口受限）"],
-        topKeywords: [],
-      },
-      items: [],
-      result: {
-        source: "xiaohongshu",
-        status: "error",
-        recordsCount: 0,
-        errorMessage: err.message || String(err),
-      },
-    };
-  }
+function makeEmpty(reason: string) {
+  return {
+    data: {
+      platform: "xiaohongshu" as const,
+      platformName: "小红书",
+      postCount: 0,
+      readCount: 0,
+      sentiment: "neutral" as const,
+      hotPosts: [`小红书: ${reason}`],
+      topKeywords: [],
+    },
+    items: [],
+    result: {
+      source: "xiaohongshu",
+      status: "error" as const,
+      recordsCount: 0,
+      errorMessage: reason,
+    },
+  };
 }
