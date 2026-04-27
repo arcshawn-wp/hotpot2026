@@ -53,6 +53,7 @@ services:
       PORT: 3000
       APP_ID: ${APP_ID:-hotpot_app_1777004661_5058}
       APP_SECRET: ${APP_SECRET:-ee0b7b8de1052a7d10c05f04af015ba87d1da916aad3a7d88fb2565283c4c7cc}
+      XHS_COOKIE: ${XHS_COOKIE:-}
     depends_on:
       mysql:
         condition: service_healthy
