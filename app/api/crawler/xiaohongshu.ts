@@ -246,10 +246,11 @@ export async function crawlXiaohongshu(): Promise<{
     };
   }
 
-  // ====== 3. 检查活跃时段（7:00-23:00） ======
-  const hour = new Date().getHours();
-  if (hour < 7 || hour >= 23) {
-    console.log(`[XHS] 当前 ${hour} 点，非活跃时段(7-23)，跳过`);
+  // ====== 3. 检查活跃时段（北京时间 7:00-23:00） ======
+  const chinaTime = new Date(Date.now() + 8 * 3600_000); // UTC+8
+  const chinaHour = chinaTime.getUTCHours();
+  if (chinaHour < 7 || chinaHour >= 23) {
+    console.log(`[XHS] 当前北京时间 ${chinaHour} 点，非活跃时段(7-23)，跳过`);
     return {
       data: {
         platform: "xiaohongshu",
@@ -257,7 +258,7 @@ export async function crawlXiaohongshu(): Promise<{
         postCount: 0,
         readCount: 0,
         sentiment: "neutral",
-        hotPosts: ["小红书爬取仅在 7:00-23:00 执行"],
+        hotPosts: ["小红书爬取仅在北京时间 7:00-23:00 执行"],
         topKeywords: [],
       },
       items: [],
