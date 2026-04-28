@@ -93,6 +93,12 @@ export async function queryJdPrice(jdUrl: string): Promise<JdPriceResult> {
   const text = await res.text();
 
   // 检查错误
+  if (text.includes("调用量已用完") || text.includes("请明日再来")) {
+    const err = new Error("QUOTA_EXHAUSTED");
+    (err as any).quotaExhausted = true;
+    throw err;
+  }
+
   if (text.includes("服务器响应错误") || text.includes("已到期") || text.includes("请续费")) {
     return {
       success: false,

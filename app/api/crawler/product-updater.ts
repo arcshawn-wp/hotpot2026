@@ -94,6 +94,11 @@ export async function updateProductPrices(): Promise<CrawlResult> {
           await sleep(REQUEST_INTERVAL);
         }
       } catch (err: any) {
+        // 今日额度用完，直接终止，不再浪费时间
+        if ((err as any).quotaExhausted) {
+          console.warn(`[PriceUpdater] 接口今日调用量已用完，终止更新。已成功 ${successCount} 个。`);
+          break;
+        }
         console.warn(`[PriceUpdater]   -> 异常: ${err.message}`);
         failCount++;
         // 出错后等久一点再继续
