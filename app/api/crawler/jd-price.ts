@@ -1,260 +1,168 @@
-import { createHash } from "crypto";
 import { fetchWithTimeout } from "./lib";
 
 // ============================================================
-// 京东联盟 API 客户端 — 商品搜索 & 价格查询
-// 基于 JD Union Open API (router.jd.com)
-// 签名算法：MD5( secretKey + sorted(key+value) + secretKey )
+// 京东商品价格查询 — 基于第三方代理接口
+// 接口地址：http://8.210.105.105/index/index/jdtest
+// 输入：京东商品 URL → 输出：商品名称、价格、图片等
+// 返回格式：PHP print_r（非JSON），需正则解析
+// 注意：接口有频率限制，请求间隔建议 ≥ 8 秒
 // ============================================================
 
 // ---------- 配置 ----------
-const JD_API_ENDPOINT = "https://router.jd.com/api";
-const JD_APP_KEY = process.env.JD_UNION_APP_KEY || "";
-const JD_SECRET_KEY = process.env.JD_UNION_SECRET_KEY || "";
+const JD_PROXY_ENDPOINT = process.env.JD_PROXY_URL || "http://8.210.105.105/index/index/jdtest";
+const JD_PROXY_USERID = process.env.JD_PROXY_USERID || "5";
+const JD_PROXY_USERNAME = process.env.JD_PROXY_USERNAME || "jdtest";
+const JD_PROXY_PASSWORD = process.env.JD_PROXY_PASSWORD || "jdtesta7s45d";
+const JD_PROXY_SIGNTIME = process.env.JD_PROXY_SIGNTIME || "48e3ec5a29b07a7c2fa6e6f197bdb1cb";
 
-// ---------- 工具函数 ----------
+// ---------- 商品 → 京东链接映射表 ----------
+// productId → JD 商品页 URL
+export const PRODUCT_JD_URL_MAP: Record<string, string> = {
+  p001: "https://item.jd.com/100038283811.html",   // 方太油烟机灶具套装
+  p002: "https://item.jd.com/100010985612.html",   // 美的嵌入式蒸烤一体机
+  p003: "https://item.jd.com/100140401824.html",   // 石头扫拖机器人G20S
+  p004: "https://item.jd.com/100105043928.html",   // 戴森吸尘器V15
+  p005: "https://item.jd.com/100015760597.html",   // 蓝盒子床垫Z1
+  p006: "https://item.jd.com/5776918.html",        // 德业除湿机DYD-T22A3
+  p007: "https://item.jd.com/10195578374244.html",  // 海尔烘干机EHG100
+  p008: "https://item.jd.com/100010903651.html",   // 除湿袋/除湿盒套装
+  p009: "https://item.jd.com/100025432314.html",   // 北鼎养生壶K108
+  p010: "https://item.jd.com/100151115438.html",   // 小熊电炖锅
+  p011: "https://item.jd.com/100048259196.html",   // SKG颈椎按摩仪
+  p012: "https://item.jd.com/100039722916.html",   // 松下负离子吹风机
+  p013: "https://item.jd.com/100041029333.html",   // 太力真空收纳袋套装
+  p014: "https://item.jd.com/100091651631.html",   // 小米除螨仪
+  p015: "https://item.jd.com/100022939492.html",   // 立邦乳胶漆 18L
+  p016: "https://item.jd.com/100170014877.html",   // 欧普LED吸顶灯
+  p017: "https://item.jd.com/100013584763.html",   // 小米空气净化器4Pro
+  p018: "https://item.jd.com/10098004002778.html",  // 格力空调1.5匹
+  p019: "https://item.jd.com/10021728009191.html",  // 美的电热水壶
+  p020: "https://item.jd.com/10203521991160.html",  // 宜家收纳箱套装
+};
 
-/** 格式化日期为 yyyy-MM-dd HH:mm:ss */
-function formatTimestamp(d: Date): string {
-  const pad = (n: number) => String(n).padStart(2, "0");
-  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+// ---------- 类型定义 ----------
+
+export interface JdPriceResult {
+  success: boolean;
+  /** 京东商品ID */
+  jdId: string;
+  /** 京东上的商品名称 */
+  jdName: string;
+  /** 当前价格 */
+  price: number;
+  /** 商品主图 */
+  imageUrl: string;
+  /** 原始京东链接 */
+  jdUrl: string;
+  /** 错误信息 */
+  error?: string;
 }
 
-/** 生成 JD Union API 签名 */
-function sign(params: Record<string, string>, secretKey: string): string {
-  const sorted = Object.keys(params).sort();
-  let baseString = secretKey;
-  for (const k of sorted) {
-    baseString += k + params[k];
-  }
-  baseString += secretKey;
-  return createHash("md5").update(baseString, "utf8").digest("hex").toUpperCase();
+// ---------- 解析 PHP print_r 输出 ----------
+
+function extractField(text: string, field: string): string {
+  // 匹配 [field] => value 格式
+  const regex = new RegExp(`\\[${field}\\] => (.+)`, "m");
+  const match = text.match(regex);
+  return match ? match[1].trim() : "";
 }
 
-/** 调用京东联盟 API */
-async function callJdUnionApi<T = any>(
-  method: string,
-  bizParams: Record<string, any>
-): Promise<T> {
-  if (!JD_APP_KEY || !JD_SECRET_KEY) {
-    throw new Error("JD Union API 凭证未配置 (JD_UNION_APP_KEY / JD_UNION_SECRET_KEY)");
-  }
+function extractCode(text: string): number {
+  const val = extractField(text, "code");
+  return val ? parseInt(val, 10) : 0;
+}
 
-  const systemParams: Record<string, string> = {
-    method,
-    app_key: JD_APP_KEY,
-    timestamp: formatTimestamp(new Date()),
-    format: "json",
-    v: "1.0",
-    sign_method: "md5",
-    param_json: JSON.stringify(bizParams),
-  };
+// ---------- 核心查询函数 ----------
 
-  systemParams.sign = sign(systemParams, JD_SECRET_KEY);
+/**
+ * 查询单个京东商品的价格
+ * @param jdUrl 京东商品页 URL（如 https://item.jd.com/5776918.html）
+ */
+export async function queryJdPrice(jdUrl: string): Promise<JdPriceResult> {
+  const encodedUrl = encodeURIComponent(jdUrl);
 
-  // 拼装 URL
-  const qs = Object.entries(systemParams)
-    .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`)
-    .join("&");
+  const apiUrl =
+    `${JD_PROXY_ENDPOINT}?url=${encodedUrl}` +
+    `&userid=${JD_PROXY_USERID}` +
+    `&username=${JD_PROXY_USERNAME}` +
+    `&password=${JD_PROXY_PASSWORD}` +
+    `&sign=test` +
+    `&signtime=${JD_PROXY_SIGNTIME}`;
 
-  const url = `${JD_API_ENDPOINT}?${qs}`;
-
-  const res = await fetchWithTimeout(url, { timeout: 20000 });
+  const res = await fetchWithTimeout(apiUrl, { timeout: 20000 });
   const text = await res.text();
 
-  let json: any;
+  // 检查错误
+  if (text.includes("服务器响应错误") || text.includes("已到期") || text.includes("请续费")) {
+    return {
+      success: false,
+      jdId: "",
+      jdName: "",
+      price: 0,
+      imageUrl: "",
+      jdUrl,
+      error: "接口服务异常或已到期",
+    };
+  }
+
+  const code = extractCode(text);
+  if (code !== 200) {
+    const msg = extractField(text, "msg");
+    return {
+      success: false,
+      jdId: "",
+      jdName: "",
+      price: 0,
+      imageUrl: "",
+      jdUrl,
+      error: `API 返回 code=${code}, msg=${msg || "unknown"}`,
+    };
+  }
+
+  const id = extractField(text, "id");
+  const name = extractField(text, "name");
+  const priceStr = extractField(text, "price");
+  const images = extractField(text, "images");
+
+  const price = parseFloat(priceStr);
+
+  if (!name || isNaN(price)) {
+    return {
+      success: false,
+      jdId: id,
+      jdName: name,
+      price: 0,
+      imageUrl: images,
+      jdUrl,
+      error: "解析失败：name 或 price 缺失",
+    };
+  }
+
+  return {
+    success: true,
+    jdId: id,
+    jdName: name,
+    price,
+    imageUrl: images,
+    jdUrl,
+  };
+}
+
+/**
+ * 健康检查：测试接口是否可用
+ */
+export async function testJdProxyConnection(): Promise<{ ok: boolean; message: string }> {
   try {
-    json = JSON.parse(text);
-  } catch {
-    throw new Error(`JD API 返回非 JSON: ${text.slice(0, 200)}`);
-  }
-
-  // 错误处理
-  if (json.error_response) {
-    const err = json.error_response;
-    throw new Error(`JD API 错误 [${err.code}]: ${err.zh_desc || err.en_desc || JSON.stringify(err)}`);
-  }
-
-  // 解析响应字段: method 名称中的 . 替换为 _ 再加 _response
-  const responseField = `${method.replace(/\./g, "_")}_response`;
-  const responseData = json[responseField];
-
-  if (!responseData) {
-    throw new Error(`JD API 响应缺少字段 ${responseField}: ${JSON.stringify(json).slice(0, 300)}`);
-  }
-
-  // result 字段是 JSON 字符串，需要二次解析
-  if (typeof responseData.result === "string") {
-    return JSON.parse(responseData.result) as T;
-  }
-
-  return responseData as T;
-}
-
-// ---------- 商品搜索 ----------
-
-export interface JdGoodsResult {
-  totalCount: number;
-  data: JdGoodsItem[];
-}
-
-export interface JdGoodsItem {
-  skuId: number;
-  skuName: string;
-  /** 无线价（到手价） */
-  wlPrice: number;
-  /** PC 价 */
-  pcPrice: number;
-  /** 最低价 */
-  lowestPrice: number;
-  /** 最低券后价 */
-  lowestCouponPrice: number;
-  /** 店铺名称 */
-  shopName: string;
-  /** 品牌名称 */
-  brandName: string;
-  /** 一级类目 */
-  cid1Name: string;
-  /** 二级类目 */
-  cid2Name: string;
-  /** 商品图片 */
-  imageUrl: string;
-  /** 好评率 */
-  goodCommentsShare: number;
-  /** 30天引入订单量 */
-  inOrderCount30Days: number;
-  /** 佣金比例 */
-  commissionShare: number;
-  /** 商品详情页链接 */
-  materialUrl: string;
-}
-
-/**
- * 搜索京东商品
- * @param keyword 搜索关键词
- * @param pageSize 每页条数（1~50，默认10）
- * @param pageIndex 页码（从1开始）
- */
-export async function searchJdGoods(
-  keyword: string,
-  pageSize = 10,
-  pageIndex = 1
-): Promise<JdGoodsResult> {
-  const resp = await callJdUnionApi<any>("jd.union.open.goods.query", {
-    goodsReqDTO: {
-      keyword,
-      pageSize,
-      pageIndex,
-      sortName: "price",      // 按价格排序
-      sort: "asc",            // 升序
-      isHot: 1,               // 爆款优先
-      isPG: 0,
-      isCoupon: 0,
-    },
-  });
-
-  if (resp.code !== 200 && resp.code !== undefined) {
-    // code=200 表示成功，其他可能是 "暂无数据" 等
-    if (resp.code === 404 || resp.message?.includes("暂无")) {
-      return { totalCount: 0, data: [] };
+    // 用德业除湿机做测试（已确认可用）
+    const result = await queryJdPrice("https://item.jd.com/5776918.html");
+    if (result.success) {
+      return {
+        ok: true,
+        message: `接口可用 — ${result.jdName.slice(0, 30)} ¥${result.price}`,
+      };
     }
-    throw new Error(`JD goods query 错误 [${resp.code}]: ${resp.message}`);
-  }
-
-  const rawList: any[] = resp.data || [];
-  const totalCount: number = resp.totalCount || rawList.length;
-
-  const data: JdGoodsItem[] = rawList.map((item: any) => {
-    const priceInfo = item.priceInfo || {};
-    const shopInfo = item.shopInfo || {};
-    const categoryInfo = item.categoryInfo || {};
-    const imageInfo = item.imageInfo || {};
-    const commissionInfo = item.commissionInfo || {};
-
-    return {
-      skuId: item.skuId || 0,
-      skuName: item.skuName || "",
-      wlPrice: parseFloat(priceInfo.lowestPrice || priceInfo.price || "0"),
-      pcPrice: parseFloat(priceInfo.price || "0"),
-      lowestPrice: parseFloat(priceInfo.lowestPrice || priceInfo.price || "0"),
-      lowestCouponPrice: parseFloat(priceInfo.lowestCouponPrice || priceInfo.lowestPrice || priceInfo.price || "0"),
-      shopName: shopInfo.shopName || "",
-      brandName: item.brandName || "",
-      cid1Name: categoryInfo.cid1Name || "",
-      cid2Name: categoryInfo.cid2Name || "",
-      imageUrl: imageInfo.imageList?.[0]?.url || "",
-      goodCommentsShare: parseFloat(item.goodCommentsShare || "0"),
-      inOrderCount30Days: item.inOrderCount30Days || 0,
-      commissionShare: parseFloat(commissionInfo.commissionShare || "0"),
-      materialUrl: item.materialUrl || `https://item.jd.com/${item.skuId}.html`,
-    };
-  });
-
-  return { totalCount, data };
-}
-
-/**
- * 按 SKU ID 批量查询商品信息
- * @param skuIds SKU ID 列表（最多100个）
- */
-export async function queryJdGoodsBySkuIds(skuIds: number[]): Promise<JdGoodsItem[]> {
-  if (skuIds.length === 0) return [];
-
-  const resp = await callJdUnionApi<any>("jd.union.open.goods.query", {
-    goodsReqDTO: {
-      skuIds: skuIds.slice(0, 100),
-      pageSize: skuIds.length,
-      pageIndex: 1,
-    },
-  });
-
-  if (resp.code !== 200 && resp.code !== undefined) {
-    if (resp.code === 404) return [];
-    throw new Error(`JD goods query 错误 [${resp.code}]: ${resp.message}`);
-  }
-
-  const rawList: any[] = resp.data || [];
-  return rawList.map((item: any) => {
-    const priceInfo = item.priceInfo || {};
-    const shopInfo = item.shopInfo || {};
-    const categoryInfo = item.categoryInfo || {};
-    const imageInfo = item.imageInfo || {};
-    const commissionInfo = item.commissionInfo || {};
-
-    return {
-      skuId: item.skuId || 0,
-      skuName: item.skuName || "",
-      wlPrice: parseFloat(priceInfo.lowestPrice || priceInfo.price || "0"),
-      pcPrice: parseFloat(priceInfo.price || "0"),
-      lowestPrice: parseFloat(priceInfo.lowestPrice || priceInfo.price || "0"),
-      lowestCouponPrice: parseFloat(priceInfo.lowestCouponPrice || priceInfo.lowestPrice || priceInfo.price || "0"),
-      shopName: shopInfo.shopName || "",
-      brandName: item.brandName || "",
-      cid1Name: categoryInfo.cid1Name || "",
-      cid2Name: categoryInfo.cid2Name || "",
-      imageUrl: imageInfo.imageList?.[0]?.url || "",
-      goodCommentsShare: parseFloat(item.goodCommentsShare || "0"),
-      inOrderCount30Days: item.inOrderCount30Days || 0,
-      commissionShare: parseFloat(commissionInfo.commissionShare || "0"),
-      materialUrl: item.materialUrl || `https://item.jd.com/${item.skuId}.html`,
-    };
-  });
-}
-
-/**
- * 健康检查：测试 API 凭证是否有效
- */
-export async function testJdApiConnection(): Promise<{ ok: boolean; message: string }> {
-  try {
-    if (!JD_APP_KEY || !JD_SECRET_KEY) {
-      return { ok: false, message: "缺少 JD_UNION_APP_KEY 或 JD_UNION_SECRET_KEY 环境变量" };
-    }
-    const result = await searchJdGoods("手机", 1, 1);
-    return {
-      ok: true,
-      message: `API 连接成功，测试搜索返回 ${result.totalCount} 条结果`,
-    };
+    return { ok: false, message: `接口异常: ${result.error}` };
   } catch (err: any) {
-    return { ok: false, message: `API 连接失败: ${err.message}` };
+    return { ok: false, message: `连接失败: ${err.message}` };
   }
 }
