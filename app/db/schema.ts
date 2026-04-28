@@ -11,6 +11,7 @@ import {
   json,
   index,
   uniqueIndex,
+  boolean,
 } from "drizzle-orm/mysql-core";
 
 // ============================================================
@@ -148,6 +149,71 @@ export const dailySnapshots = mysqlTable(
     createdAt: timestamp("created_at").notNull().defaultNow(),
   },
   (table) => [uniqueIndex("idx_snapshot_date").on(table.date)]
+);
+
+// ============================================================
+// 趋势关键词表（每日热搜中提取的产品趋势）
+// ============================================================
+export const trendKeywords = mysqlTable(
+  "trend_keywords",
+  {
+    id: serial("id").primaryKey(),
+    date: date("date").notNull(),
+    keyword: varchar("keyword", { length: 128 }).notNull(),
+    category: varchar("category", { length: 64 }),
+    subCategory: varchar("sub_category", { length: 64 }),
+    heatTotal: int("heat_total").notNull().default(0),
+    platformCount: tinyint("platform_count").notNull().default(1),
+    platforms: json("platforms").$type<{
+      list: string[];
+      signals: Array<{ platform: string; title: string; heat: number; rank: number }>;
+    }>(),
+    weatherRelevant: boolean("weather_relevant").notNull().default(false),
+    score: int("score").notNull().default(0),
+    isNewOpportunity: boolean("is_new_opportunity").notNull().default(false),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+  },
+  (table) => [
+    index("idx_trend_date").on(table.date),
+    index("idx_trend_score").on(table.score),
+  ]
+);
+
+// ============================================================
+// 选品候选表（系统自动发现的潜在商品）
+// ============================================================
+export const productCandidates = mysqlTable(
+  "product_candidates",
+  {
+    id: serial("id").primaryKey(),
+    candidateId: varchar("candidate_id", { length: 128 }).notNull().unique(),
+    keyword: varchar("keyword", { length: 128 }).notNull(),
+    suggestedName: varchar("suggested_name", { length: 255 }).notNull(),
+    category: varchar("category", { length: 64 }),
+    subCategory: varchar("sub_category", { length: 64 }),
+    reason: text("reason"),
+    score: int("score").notNull().default(0),
+    trendData: json("trend_data").$type<{
+      firstDate?: string;
+      lastDate?: string;
+      platforms: string[];
+      topKeyword: string;
+      totalHeat: number;
+      weatherBonus: number;
+      seasonalBonus: number;
+      signalCount: number;
+    }>(),
+    /** pending=待审核 | approved=已采纳 | rejected=已忽略 */
+    status: varchar("status", { length: 16 }).notNull().default("pending"),
+    jdUrl: varchar("jd_url", { length: 512 }),
+    jdPrice: decimal("jd_price", { precision: 10, scale: 2 }),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    reviewedAt: timestamp("reviewed_at"),
+  },
+  (table) => [
+    index("idx_candidate_status").on(table.status),
+    index("idx_candidate_score").on(table.score),
+  ]
 );
 
 // ============================================================

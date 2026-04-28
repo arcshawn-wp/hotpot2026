@@ -4,6 +4,11 @@ import { crawlDouyin } from "./douyin";
 import { crawlXiaohongshu } from "./xiaohongshu";
 import { updateProductPrices } from "./product-updater";
 import {
+  analyzeTrends,
+  saveTrendAnalysis,
+  trendAnalysisToResult,
+} from "./trend-analyzer";
+import {
   getTodayStr,
   getHotspotsForMatching,
   savePlatformData,
@@ -97,7 +102,33 @@ export async function runFullCrawl(): Promise<FullCrawlResult> {
   ];
   await saveCrawlLogs(crawlResults);
 
-  // 5.5 更新商品京东价格（通过第三方代理接口，无需额外密钥）
+  // 5.5 数据驱动选品分析：从热搜数据中自动发现产品趋势
+  console.log("[Crawler] Running trend analysis for product selection...");
+  try {
+    const trendAnalysis = await analyzeTrends(
+      [
+        { platform: "weibo", items: weiboRes.items },
+        { platform: "douyin", items: douyinRes.items },
+        { platform: "xiaohongshu", items: xhsRes.items },
+      ],
+      weather
+    );
+    console.log(`[Crawler] ${trendAnalysis.summary}`);
+    await saveTrendAnalysis(trendAnalysis);
+    const trendResult = trendAnalysisToResult(trendAnalysis);
+    crawlResults.push(trendResult);
+    await saveCrawlLogs([trendResult]);
+  } catch (err: any) {
+    console.warn("[Crawler] Trend analysis failed:", err.message);
+    crawlResults.push({
+      source: "trend-analysis",
+      status: "error",
+      recordsCount: 0,
+      errorMessage: err.message,
+    });
+  }
+
+  // 5.6 更新商品京东价格（通过第三方代理接口，无需额外密钥）
   console.log("[Crawler] Updating product prices via JD proxy API...");
   const priceResult = await updateProductPrices();
   console.log(
