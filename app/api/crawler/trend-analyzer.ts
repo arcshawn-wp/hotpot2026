@@ -5,6 +5,8 @@ import {
   matchCategories,
   getWeatherBonuses,
   getSeasonalBonuses,
+  CATEGORY_TAXONOMY,
+  SEASONAL_TRIGGERS,
 } from "./product-taxonomy";
 import { getSolarTerm, getTodayStr } from "./hotspots";
 import type { HotSearchItem, WeatherData, CrawlResult } from "./types";
@@ -129,7 +131,11 @@ export async function analyzeTrends(
     }
   }
 
-  // ---- Step 2: 计算天气/节气加分 ----
+  // ---- Step 2: 环境驱动推荐 ----
+  // 即使热搜没有直接提到产品，天气/节日/节气条件满足时也主动推荐
+  // 这是核心创新：大部分热搜是新闻/娱乐，产品需求更多由环境驱动
+
+  // 2a. 天气驱动：根据当前天气条件主动创建品类推荐
   const weatherBonuses = getWeatherBonuses({
     condition: weather.condition,
     humidity: weather.humidity,
@@ -137,9 +143,79 @@ export async function analyzeTrends(
     tip: weather.tip,
   });
 
-  // 收集所有热搜标题用于节气匹配
+  for (const [catKey, bonus] of weatherBonuses.entries()) {
+    if (!bucketMap.has(catKey)) {
+      const [cat, sub] = catKey.split("|");
+      const taxonomy = CATEGORY_TAXONOMY.find(
+        (c) => c.category === cat && c.subCategory === sub
+      );
+      bucketMap.set(catKey, {
+        category: cat,
+        subCategory: sub,
+        signals: [{
+          platform: "weather",
+          title: `天气触发: ${weather.condition} ${weather.temperature}°C 湿度${weather.humidity}%`,
+          heat: 0,
+          rank: 0,
+          matchType: "context",
+          matchedKeyword: weather.condition,
+        }],
+        totalHeat: 0,
+        platformCount: 0,
+        platforms: ["weather"],
+        topKeyword: sub,
+        weatherBonus: bonus,
+        seasonalBonus: 0,
+        baseWeight: taxonomy?.baseWeight || 3,
+        score: 0,
+        isNewOpportunity: false,
+        matchedProductIds: [],
+      });
+    }
+  }
+
+  // 2b. 节日/节气驱动：如果热搜中出现节日关键词，主动推荐相关品类
   const allTitles = platformItems.flatMap((p) => p.items.map((i) => i.title));
+  const combinedText = allTitles.join(" ");
   const seasonalBonuses = getSeasonalBonuses(solar.name, allTitles);
+
+  for (const trigger of SEASONAL_TRIGGERS) {
+    const matched = trigger.keywords.some(
+      (kw) => solar.name.includes(kw) || combinedText.includes(kw)
+    );
+    if (!matched) continue;
+
+    for (const [cat, sub] of trigger.targetCategories) {
+      const key = `${cat}|${sub}`;
+      if (!bucketMap.has(key)) {
+        const taxonomy = CATEGORY_TAXONOMY.find(
+          (c) => c.category === cat && c.subCategory === sub
+        );
+        bucketMap.set(key, {
+          category: cat,
+          subCategory: sub,
+          signals: [{
+            platform: "seasonal",
+            title: `节日/节气触发: ${trigger.name}`,
+            heat: 0,
+            rank: 0,
+            matchType: "context",
+            matchedKeyword: trigger.name,
+          }],
+          totalHeat: 0,
+          platformCount: 0,
+          platforms: ["seasonal"],
+          topKeyword: sub,
+          weatherBonus: 0,
+          seasonalBonus: trigger.bonus,
+          baseWeight: taxonomy?.baseWeight || 3,
+          score: 0,
+          isNewOpportunity: false,
+          matchedProductIds: [],
+        });
+      }
+    }
+  }
 
   // ---- Step 3: 与现有商品匹配 ----
   const db = getDb();
@@ -182,20 +258,28 @@ export async function analyzeTrends(
 
     // 综合评分公式
     // 1) 热度基础分: normalize to 0-40 (基于各平台热度值总和)
-    const heatBase = Math.min(40, Math.log10(Math.max(bucket.totalHeat, 1)) * 5);
+    const heatBase = bucket.totalHeat > 0
+      ? Math.min(40, Math.log10(Math.max(bucket.totalHeat, 1)) * 5)
+      : 0;
 
     // 2) 直接匹配 vs 上下文匹配
     const directCount = bucket.signals.filter((s) => s.matchType === "direct").length;
     const matchQuality = directCount > 0 ? 15 : 5;
 
-    // 3) 跨平台加分: 多平台出现说明趋势更强
-    const crossPlatformBonus = (bucket.platformCount - 1) * 10;
+    // 3) 跨平台加分: 多平台出现说明趋势更强（weather/seasonal 不算跨平台）
+    const realPlatforms = bucket.platforms.filter(
+      (p) => p !== "weather" && p !== "seasonal"
+    );
+    const crossPlatformBonus = Math.max(0, realPlatforms.length - 1) * 10;
 
     // 4) 品类权重
     const weightBonus = bucket.baseWeight * 3;
 
     // 5) 新机会额外加分（鼓励发现新品类）
     const noveltyBonus = bucket.isNewOpportunity ? 10 : 0;
+
+    // 6) 环境驱动基础分：即使没有热搜热度，天气/节日触发也给予基础分
+    const envBase = (bucket.weatherBonus > 0 || bucket.seasonalBonus > 0) ? 10 : 0;
 
     bucket.score = Math.round(
       heatBase +
@@ -204,7 +288,8 @@ export async function analyzeTrends(
       weightBonus +
       bucket.weatherBonus +
       bucket.seasonalBonus +
-      noveltyBonus
+      noveltyBonus +
+      envBase
     );
   }
 
@@ -405,13 +490,13 @@ function generateProductName(trend: TrendBucket): string {
  * 获取选品分析的 CrawlResult 格式（用于日志记录）
  */
 export function trendAnalysisToResult(analysis: TrendAnalysisResult): CrawlResult {
+  const hasResults = analysis.trends.length > 0;
   return {
     source: "trend-analysis",
-    status: analysis.trends.length > 0 ? "success" : "error",
+    status: hasResults ? "success" : "partial",
     recordsCount: analysis.trends.length,
-    errorMessage:
-      analysis.trends.length === 0
-        ? "未从热搜中发现产品相关趋势"
-        : `发现${analysis.newOpportunities.length}个新机会，更新${analysis.heatUpdates.length}个商品热度`,
+    errorMessage: hasResults
+      ? `发现${analysis.trends.length}个品类趋势，${analysis.newOpportunities.length}个新机会，更新${analysis.heatUpdates.length}个商品热度`
+      : "未从热搜中发现产品相关趋势",
   };
 }

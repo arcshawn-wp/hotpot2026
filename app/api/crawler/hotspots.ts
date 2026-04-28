@@ -15,7 +15,10 @@ export function getTodayStr(): string {
 
 /** 根据当前日期获取节气（简化版，覆盖主要节气） */
 export function getSolarTerm(dateStr: string): { name: string; nextName: string; daysToNext: number } {
+  // 按月日顺序排列（1月→12月），确保线性扫描正确
   const terms: Array<{ month: number; day: number; name: string }> = [
+    { month: 1, day: 5, name: "小寒" },
+    { month: 1, day: 20, name: "大寒" },
     { month: 2, day: 3, name: "立春" },
     { month: 2, day: 18, name: "雨水" },
     { month: 3, day: 5, name: "惊蛰" },
@@ -38,8 +41,6 @@ export function getSolarTerm(dateStr: string): { name: string; nextName: string;
     { month: 11, day: 22, name: "小雪" },
     { month: 12, day: 6, name: "大雪" },
     { month: 12, day: 21, name: "冬至" },
-    { month: 1, day: 5, name: "小寒" },
-    { month: 1, day: 20, name: "大寒" },
   ];
 
   const [y, m, d] = dateStr.split("-").map(Number);
